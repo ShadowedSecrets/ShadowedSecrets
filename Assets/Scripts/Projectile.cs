@@ -1,28 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.AssetImporters;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 10f;
+    private Vector3 cursorPos;
+    private Camera mainCam;
     private Rigidbody2D rb;
+    public float force;
 
-    public float lifeTime = 2f;
-
-    
-
+    private float timeToDelete = 2f;
+    // Start is called before the first frame update
     void Start()
     {
-        
-        Destroy(gameObject, lifeTime);
+        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        rb = GetComponent<Rigidbody2D>();
+        cursorPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = cursorPos - transform.position;
+        Vector3 rotation = transform.position - cursorPos;
+
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other)
+    // Update is called once per frame
+    void Update()
     {
-        //we need collision logic here
-        Destroy(gameObject);
+
+        Destroy(gameObject, timeToDelete);
+        
     }
 }
