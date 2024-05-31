@@ -33,7 +33,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.45199, y: 0.45199, z: 0.45199}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5961803288877935555}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8754588877363549738
@@ -114,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &9094876899587670512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +147,8 @@ MonoBehaviour:
   dashCooldown: 4
   dashDistance: 4
   plagueBolt: {fileID: 8424896122384427284, guid: 8154831a966868444b2f1535a9caff8c, type: 3}
-  projectileSpeed: 5
+  projectileSpawn: {fileID: 5961803288877935555}
+  projectileSpeed: 10
 --- !u!61 &7694501685829655929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,3 +194,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &8707698259581765044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5961803288877935555}
+  m_Layer: 0
+  m_Name: boltspawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5961803288877935555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707698259581765044}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.26, y: 0.7, z: -1.38}
+  m_LocalScale: {x: 2.2124383, y: 2.2124383, z: 2.2124383}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8480207943685613622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 10f;
     private Rigidbody2D rb;
 
     public float lifeTime = 2f;
@@ -14,8 +14,7 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-
-
+        
         Destroy(gameObject, lifeTime);
         
     }

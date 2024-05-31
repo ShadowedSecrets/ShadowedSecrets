@@ -17,6 +17,9 @@ public class playerAbilities : MonoBehaviour
     public Transform projectileSpawn;
     public float projectileSpeed = 5f;
 
+    public float clawRange = 2f;
+    public float clawAngle = 45f;
+
 
     private Rigidbody2D rb;
 
@@ -55,17 +58,22 @@ public class playerAbilities : MonoBehaviour
         if(plagueTimer <= 0f)
         {
             Debug.Log("Plague Used");
+
             Vector3 mousePosition = Input.mousePosition;
-            mousePosition.z = Camera.main.transform.position.z;
+            mousePosition.z = Camera.main.nearClipPlane;
+            
+                                                                                        //Mouse Position to aim plague
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
             Vector3 direction = (worldPosition - projectileSpawn.position).normalized;
+
+
             GameObject projectile = Instantiate(plagueBolt, projectileSpawn.position, projectileSpawn.rotation);
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = new Vector2(direction.x, direction.y) * projectileSpeed;
+                rb.velocity = direction * projectileSpeed;
             }
 
          
@@ -77,8 +85,16 @@ public class playerAbilities : MonoBehaviour
     public void UseClaw()
     {
         if(clawTimer <= 0f)
-        {
+        {                                                                           //START OF CLAW LOGIC we need Collider[] hitEnemies, to detect the enemy layer.
             Debug.Log("Claw Used");
+
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition.z = Camera.main.nearClipPlane;
+
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+            Vector3 direction = (worldPosition - projectileSpawn.position).normalized;
+
             clawTimer = clawCooldown;
         }
     }
