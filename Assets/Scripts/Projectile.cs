@@ -13,13 +13,24 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         cursorPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = cursorPos - transform.position;
-        Vector3 rotation = transform.position - cursorPos;
 
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+
+        if (direction.x < 0)
+        {
+            Flip();
+        }
+        
+        
         
     }
 
@@ -29,5 +40,12 @@ public class Projectile : MonoBehaviour
 
         Destroy(gameObject, timeToDelete);
         
+    }
+
+    void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 }

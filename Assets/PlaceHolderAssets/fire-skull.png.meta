@@ -113,12 +113,12 @@ TextureImporter:
       name: fire-skull_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 90
-        height: 90
+        x: 10
+        y: 6
+        width: 67
+        height: 77
       alignment: 9
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.48498067, y: 0.4695064}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: fire-skull_4
       rect:
         serializedVersion: 2
-        x: 384
-        y: 3
+        x: 382
+        y: 6
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.4925459, y: 0.38819024}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

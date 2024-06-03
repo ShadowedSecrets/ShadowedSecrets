@@ -5,23 +5,38 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float spawnRate = 2.0f;
+    [SerializeField] private float spawnRateVariation = 0.5f;
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private bool canSpawn = true;
+    private bool canSpawn = false;
 
     private void Start()
     {
-        StartCoroutine(Spawner());
+        
     }
 
     private IEnumerator Spawner()
     {
         WaitForSeconds wait = new WaitForSeconds(spawnRate);    
 
-        while (canSpawn)
+        while (true)
         {
-            yield return wait;
+            if (canSpawn)
+            {
+                Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+            }
+            float waitTime = spawnRate + Random.Range(-spawnRateVariation, spawnRateVariation);
+            yield return new WaitForSeconds (waitTime);
 
-            Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+            
+        }
+    }
+
+    public void StartSpawn()
+    {
+        if(!canSpawn)
+        {
+            canSpawn = true;
+            StartCoroutine(Spawner());
         }
     }
 }

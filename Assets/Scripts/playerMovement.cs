@@ -12,7 +12,6 @@ public class playerMovement : MonoBehaviour
 
 
     private playerAbilities abilities;
-    private bool isDashing = false;
 
     void Start()
     {
@@ -41,20 +40,19 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             abilities.UseDash(moveInput);
-            isDashing = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            abilities.UsePestilence();
         }
 
 
     }
     private void FixedUpdate()
     {
-        if (isDashing)
-        {
-            isDashing = false;
-        }
-        else
+       if (!abilities.IsDashing())
         {
             Vector2 newPosition = rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(newPosition);
-    }
+        }
     } }
