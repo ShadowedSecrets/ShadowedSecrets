@@ -1268,10 +1268,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 716009942876187234, guid: 4a5013299a6028449af740acc0505eab, type: 3}
-      propertyPath: pestilenceEffect
-      value: 
-      objectReference: {fileID: 1954162809}
     - target: {fileID: 776095120657102741, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: Hearts.Array.data[0]
       value: 
@@ -2527,11 +2523,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
---- !u!1 &1954162809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1743085056118928022, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
-  m_PrefabInstance: {fileID: 1954162808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1954162812 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5159788078330292798, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}

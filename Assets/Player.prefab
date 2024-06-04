@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3923470807432788745}
-  moveSpeed: 5
+  moveSpeed: 4
 --- !u!114 &7387378185236885054
 MonoBehaviour:
   m_ObjectHideFlags: 0
