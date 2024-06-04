@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-            Destroy(other.gameObject);
+            Destroy(gameObject);
             target = null;
         }
         else if(other.gameObject.CompareTag("Projectile"))

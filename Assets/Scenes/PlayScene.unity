@@ -985,6 +985,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
   m_PrefabInstance: {fileID: 1098172394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &758056795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 716009942876187234, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+  m_PrefabInstance: {fileID: 1098172394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758056787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af1504ca7826bc4193b879ed4e2801d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &980357260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1304,6 +1315,14 @@ PrefabInstance:
       propertyPath: Hearts.Array.data[3]
       value: 
       objectReference: {fileID: 1954162812}
+    - target: {fileID: 7387378185236885054, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: abilities
+      value: 
+      objectReference: {fileID: 758056795}
+    - target: {fileID: 7387378185236885054, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: cameraFollow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.46
