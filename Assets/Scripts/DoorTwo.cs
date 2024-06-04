@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorOne : MonoBehaviour
+public class DoorTwo : MonoBehaviour
 {
     [SerializeField] private List<EnemySpawner> enemySpawners;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("KeyOne"))
+        if (other.gameObject.CompareTag("KeyTwo"))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
@@ -16,7 +16,7 @@ public class DoorOne : MonoBehaviour
             {
                 if (spawner != null)
                 {
-                    spawner.StartSpawn();
+                    spawner.StopSpawn();
                 }
             }
         }
