@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public float speed = 2.0f;
     public float rotateSpeed = 0.0025f;
     private Rigidbody2D rb;
-
+    public int damage = 1;
     private float originalSpeed;
 
     // Start is called before the first frame update
@@ -54,12 +54,14 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(other.gameObject);
             target = null;
         }
         else if(other.gameObject.CompareTag("Projectile"))
         {
             Destroy(gameObject);
+            Score.score += 1;
         }
     }
     public void ModifySpeed(float speedFactor)

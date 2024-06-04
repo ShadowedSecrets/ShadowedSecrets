@@ -95,9 +95,11 @@ GameObject:
   - component: {fileID: 8480207943685613622}
   - component: {fileID: 8754588877363549738}
   - component: {fileID: 3923470807432788745}
-  - component: {fileID: 9094876899587670512}
-  - component: {fileID: 3487225632416951227}
   - component: {fileID: 7694501685829655929}
+  - component: {fileID: 6654824805097735442}
+  - component: {fileID: 7387378185236885054}
+  - component: {fileID: 716009942876187234}
+  - component: {fileID: 7118885917043111903}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -200,42 +202,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &9094876899587670512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834664755408865358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e5bd4d53a69fb45a365971a63abaf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 3923470807432788745}
-  moveSpeed: 4
---- !u!114 &3487225632416951227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834664755408865358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af1504ca7826bc4193b879ed4e2801d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plagueCooldown: 2
-  clawCooldown: 1
-  slowCooldown: 6
-  dashCooldown: 4
-  dashSpeed: 10
-  dashDuration: 0.3
-  slowDuration: 3
-  slowRadius: 3.58
-  slowAmount: 0.2
-  pestilenceEffect: {fileID: 2405672017504739278, guid: fce2e3851ae5c1544b510a66161b896a, type: 3}
 --- !u!61 &7694501685829655929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -281,6 +247,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09917631, y: 0.1455352}
   m_EdgeRadius: 0
+--- !u!114 &6654824805097735442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834664755408865358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e5bd4d53a69fb45a365971a63abaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3923470807432788745}
+  moveSpeed: 5
+--- !u!114 &7387378185236885054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834664755408865358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9f5a8b61713ec4197ca8804983954f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  maxHealth: 4
+  player: {fileID: 8754588877363549738}
+  movement: {fileID: 6654824805097735442}
+--- !u!114 &716009942876187234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834664755408865358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af1504ca7826bc4193b879ed4e2801d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plagueCooldown: 2
+  clawCooldown: 1
+  slowCooldown: 6
+  dashCooldown: 3
+  dashSpeed: 21
+  dashDuration: 0.2
+  slowDuration: 3
+  slowRadius: 5
+  slowAmount: 1
+  pestilenceEffect: {fileID: 2405672017504739278, guid: fce2e3851ae5c1544b510a66161b896a, type: 3}
+--- !u!114 &7118885917043111903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834664755408865358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0695ac08e111de64ebef65a4ce997a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  maxHealth: 4
+  emptyHealth: {fileID: 21300000, guid: 6956496c2f270dd48bc5a2557c22527d, type: 3}
+  fullHealth: {fileID: 21300000, guid: 62ae14540d73e134187a5cef4099d0c8, type: 3}
+  Hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playerHealth: {fileID: 7387378185236885054}
 --- !u!1 &5084409811299272287
 GameObject:
   m_ObjectHideFlags: 0
