@@ -275,7 +275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   maxHealth: 4
-  cameraFollow: {fileID: 0}
+  player: {fileID: 8754588877363549738}
+  movement: {fileID: 6654824805097735442}
 --- !u!114 &716009942876187234
 MonoBehaviour:
   m_ObjectHideFlags: 0
