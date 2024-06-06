@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -26,8 +27,10 @@ public class PlayerHealth : MonoBehaviour
             player.enabled = false;
             movement.enabled = false;
             Destroy(gameObject, 0.1f);
+            SceneManager.LoadScene("EndScene");
 
         }
     }
+
 
 }

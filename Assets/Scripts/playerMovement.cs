@@ -33,10 +33,6 @@ public class playerMovement : MonoBehaviour
         {
             abilities.UsePlague();
         }
-        if (Input.GetMouseButtonDown(1))
-        {
-            abilities.UseClaw();
-        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             abilities.UseDash(moveInput);

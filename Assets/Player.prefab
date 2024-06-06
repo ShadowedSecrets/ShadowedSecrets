@@ -289,15 +289,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af1504ca7826bc4193b879ed4e2801d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plagueCooldown: 2
-  clawCooldown: 1
+  plagueCooldownImage: {fileID: 0}
+  dashCooldownImage: {fileID: 0}
+  slowCooldownImage: {fileID: 0}
+  plagueCooldown: 0.4
   slowCooldown: 6
   dashCooldown: 3
   dashSpeed: 21
   dashDuration: 0.2
   slowDuration: 3
-  slowRadius: 5
-  slowAmount: 1
+  slowRadius: 3
+  slowAmount: 0.05
   pestilenceEffect: {fileID: 2405672017504739278, guid: fce2e3851ae5c1544b510a66161b896a, type: 3}
 --- !u!114 &7118885917043111903
 MonoBehaviour:

@@ -34,4 +34,10 @@ public class KeyManager : MonoBehaviour
         }
         
     }
+
+    public void Initialize(GameObject playerObject)
+    {
+        player = playerObject;
+    }
+    
 }

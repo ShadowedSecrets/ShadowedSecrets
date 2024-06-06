@@ -8,9 +8,9 @@ public class Projectile : MonoBehaviour
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
-
+    public int damage = 1;
     private float timeToDelete = 2f;
-    // Start is called before the first frame update
+
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -18,7 +18,8 @@ public class Projectile : MonoBehaviour
         {
             Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+        mainCam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         cursorPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = cursorPos - transform.position;
@@ -29,17 +30,8 @@ public class Projectile : MonoBehaviour
         {
             Flip();
         }
-        
-        
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
         Destroy(gameObject, timeToDelete);
-        
     }
 
     void Flip()
@@ -48,4 +40,30 @@ public class Projectile : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Projectile hit: " + collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Enemy enemy = collision.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                Debug.Log("Projectile hit an enemy and will deal damage.");
+                enemy.TakeDamage(damage);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Boss"))
+        {
+            Boss boss = collision.GetComponent<Boss>();
+            if (boss != null)
+            {
+                boss.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+    }
 }
+
+
+

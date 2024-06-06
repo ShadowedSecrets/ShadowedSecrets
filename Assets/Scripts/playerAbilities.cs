@@ -1,67 +1,81 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerAbilities : MonoBehaviour
 {
+    // COOLDOWN IMAGES
+    public Image plagueCooldownImage;
+    public Image dashCooldownImage;
+    public Image slowCooldownImage;
 
-    //COOLDOWNS
-    public float plagueCooldown = 2f;
-    public float clawCooldown = 1f;
+    // COOLDOWNS
+    public float plagueCooldown = 0.4f;
     public float slowCooldown = 6f;
 
-    //DASH VARIABLES
+    // DASH VARIABLES
     public float dashCooldown = 3f;
     public float dashSpeed = 21f;
     public float dashDuration = 0.2f;
 
     private float plagueTimer;
-    private float clawTimer;
     private float dashTimer;
     private float slowTimer;
     private float dashTime;
 
-    //PESTILENCE VARIABLES
+    // PESTILENCE VARIABLES
     public float slowDuration = 3f;
     public float slowRadius = 5f;
     public float slowAmount = 1f;
     public GameObject pestilenceEffect;
 
-    
-
     private bool isDashing;
     private Vector2 dashDirection;
     private Rigidbody2D rb;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         plagueTimer = 0f;
-        clawTimer = 0f;
         dashTimer = 0f;
         slowTimer = 0f;
-        
+
+        plagueCooldownImage.fillAmount = 0;
+        dashCooldownImage.fillAmount = 0;
+        slowCooldownImage.fillAmount = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (plagueTimer > 0f)
         {
             plagueTimer -= Time.deltaTime;
+            plagueCooldownImage.fillAmount = plagueTimer / plagueCooldown;
         }
-        if (clawTimer > 0f)
+        else
         {
-            clawTimer -= Time.deltaTime;
+            plagueCooldownImage.fillAmount = 0;
         }
-        if(dashTimer > 0f)
+
+        if (dashTimer > 0f)
         {
             dashTimer -= Time.deltaTime;
+            dashCooldownImage.fillAmount = dashTimer / dashCooldown;
         }
+        else
+        {
+            dashCooldownImage.fillAmount = 0;
+        }
+
         if (slowTimer > 0f)
         {
             slowTimer -= Time.deltaTime;
+            slowCooldownImage.fillAmount = slowTimer / slowCooldown;
+        }
+        else
+        {
+            slowCooldownImage.fillAmount = 0;
         }
 
         if (isDashing)
@@ -75,45 +89,28 @@ public class playerAbilities : MonoBehaviour
                 rb.velocity = Vector2.zero;
             }
         }
-        
     }
 
     public void UsePlague()
     {
-
-        
-        if(plagueTimer <= 0f)
+        if (plagueTimer <= 0f)
         {
             Debug.Log("Plague Used");
-
-            
-         
             plagueTimer = plagueCooldown;
-
-        }
-    }
-
-    public void UseClaw()
-    {
-        if(clawTimer <= 0f)
-        {                                                                           //START OF CLAW LOGIC we need Collider[] hitEnemies, to detect the enemy layer.
-            Debug.Log("Claw Used");
-
-            clawTimer = clawCooldown;
+            plagueCooldownImage.fillAmount = 1;
         }
     }
 
     public void UseDash(Vector2 moveInput)
     {
-        if (dashTime <= 0f && moveInput != Vector2.zero && !isDashing)
+        if (dashTimer <= 0f && moveInput != Vector2.zero && !isDashing)
         {
             Debug.Log("Dash Used");
-
             isDashing = true;
             dashTime = dashDuration;
-
             dashDirection = moveInput.normalized;
             dashTimer = dashCooldown;
+            dashCooldownImage.fillAmount = 1;
         }
     }
 
@@ -135,6 +132,7 @@ public class playerAbilities : MonoBehaviour
                 }
             }
             slowTimer = slowCooldown;
+            slowCooldownImage.fillAmount = 1;
         }
     }
 
@@ -159,3 +157,5 @@ public class playerAbilities : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, slowRadius);
     }
 }
+
+

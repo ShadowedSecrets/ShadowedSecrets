@@ -8,6 +8,9 @@ TagManager:
   - KeyOne
   - Enemy
   - KeyTwo
+  - Undefined
+  - Wall
+  - Boss
   layers:
   - Default
   - TransparentFX

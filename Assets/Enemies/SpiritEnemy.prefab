@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6177559701118810793}
   m_Layer: 0
   m_Name: SpiritEnemy
-  m_TagString: Undefined
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,8 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 2
   rotateSpeed: 0.025
+  damage: 1
+  maxHealth: 1
 --- !u!50 &3273652585405920684
 Rigidbody2D:
   serializedVersion: 4
@@ -161,6 +163,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.009155691}
+  m_Offset: {x: 0, y: -0.009155683}
   serializedVersion: 2
-  m_Radius: 0.34801573
+  m_Radius: 0.10831213
