@@ -2076,17 +2076,37 @@ PrefabInstance:
       propertyPath: Hearts.Array.data[3]
       value: 
       objectReference: {fileID: 1954162812}
+    - target: {fileID: 7694501685829655929, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6038454
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694501685829655929, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.13914028
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5969457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5969457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5969457
+      objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.48
+      value: -2.3342
       objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: -0.84032
       objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0000000016002
       objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalRotation.w
