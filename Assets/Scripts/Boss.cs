@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -101,6 +102,7 @@ public class Boss : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+              
         }
     }
 
@@ -108,7 +110,8 @@ public class Boss : MonoBehaviour
     {
         Debug.Log("Boss died");
         Destroy(gameObject);
-        bossHealthUI.Hide(); 
+        bossHealthUI.Hide();
+        SceneManager.LoadScene("WinScene");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
