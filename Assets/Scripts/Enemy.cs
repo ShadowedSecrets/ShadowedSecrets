@@ -69,8 +69,12 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Projectile"))
         {
-            TakeDamage(1); // Take damage from projectile
-            
+            TakeDamage(1);
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayEnemyHitSound();
+            }
+
         }
     }
 

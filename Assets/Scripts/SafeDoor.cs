@@ -17,6 +17,10 @@ public class SafeDoor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayDoorOpenSound();
+            }
             Destroy(gameObject);
         }
     }

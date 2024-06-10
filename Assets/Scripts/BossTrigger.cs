@@ -8,6 +8,10 @@ public class RoomTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if(AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayBossMusic();
+            }
             Debug.Log("Player entered the room.");
             if (boss != null)
             {

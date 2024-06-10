@@ -44,6 +44,10 @@ public class Shooter : MonoBehaviour
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayShootSound();
+            }
         }
     }
 }

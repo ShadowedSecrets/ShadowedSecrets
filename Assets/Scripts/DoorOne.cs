@@ -10,6 +10,10 @@ public class DoorOne : MonoBehaviour
     {
         if (other.gameObject.CompareTag("KeyOne"))
         {
+            if(AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayDoorOpenSound();
+            }
             Destroy(gameObject);
             Destroy(other.gameObject);
             foreach (EnemySpawner spawner in enemySpawners)

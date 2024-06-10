@@ -31,6 +31,10 @@ public class KeyManager : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && !isPickedUp)
         {
             isPickedUp = true;
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayKeyGrabSound();
+            }
         }
         
     }

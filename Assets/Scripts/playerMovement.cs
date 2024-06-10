@@ -24,11 +24,11 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // gets the input for both inputs (X and Y).
+        
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
-        //Key presses
+        
         if (Input.GetMouseButtonDown(0))
         {
             abilities.UsePlague();
@@ -50,5 +50,6 @@ public class playerMovement : MonoBehaviour
         {
             Vector2 newPosition = rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(newPosition);
+           
         }
     } }

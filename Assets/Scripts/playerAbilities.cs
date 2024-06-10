@@ -111,6 +111,10 @@ public class playerAbilities : MonoBehaviour
             dashDirection = moveInput.normalized;
             dashTimer = dashCooldown;
             dashCooldownImage.fillAmount = 1;
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayDashSound();
+            }
         }
     }
 
@@ -122,6 +126,11 @@ public class playerAbilities : MonoBehaviour
             GameObject effect = Instantiate(pestilenceEffect, transform.position, Quaternion.identity);
             effect.GetComponent<Animator>().Play("PestilenceWave");
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, slowRadius);
+
+            if(AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayPestSound();
+            }
 
             foreach (Collider2D enemy in hitEnemies)
             {

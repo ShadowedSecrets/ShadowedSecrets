@@ -28,9 +28,9 @@ public class PlayerHealth : MonoBehaviour
         {
             timeInLight += Time.deltaTime;
 
-            if (timeInLight >= 1f && damageCoroutine == null)
+            if (timeInLight >= 0.2f && damageCoroutine == null)
             {
-                damageCoroutine = StartCoroutine(DamageOverTime(1f, 1));
+                damageCoroutine = StartCoroutine(DamageOverTime(0.5f, 1));
             }
         }
     }
@@ -39,6 +39,12 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
+
+        if(AudioManager.instance != null)
+        {
+            AudioManager.instance.PlayPlayerHitSound();
+        }
+
         if (health <= 0)
         {
             player.enabled = false;
