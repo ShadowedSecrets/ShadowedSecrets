@@ -11,6 +11,7 @@ TagManager:
   - Undefined
   - Wall
   - Boss
+  - Light
   layers:
   - Default
   - TransparentFX

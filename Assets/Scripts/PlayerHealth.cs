@@ -10,15 +10,32 @@ public class PlayerHealth : MonoBehaviour
     public SpriteRenderer player;
     public playerMovement movement;
 
+    private Coroutine damageCoroutine;
+    private float timeInLight = 0f;
+    private bool isInLight = false;
 
 
-    // Start is called before the first frame update
+
+  
     void Start()
     {
         health = maxHealth;
     }
 
-    //Player health counter
+    private void Update()
+    {
+        if (isInLight)
+        {
+            timeInLight += Time.deltaTime;
+
+            if (timeInLight >= 1f && damageCoroutine == null)
+            {
+                damageCoroutine = StartCoroutine(DamageOverTime(1f, 1));
+            }
+        }
+    }
+
+
     public void TakeDamage(int amount)
     {
         health -= amount;
@@ -29,6 +46,42 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject, 0.1f);
             SceneManager.LoadScene("EndScene");
 
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Light"))
+        {
+            isInLight = true;
+            timeInLight = 0f;
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Light"))
+        {
+            isInLight = false;
+            timeInLight = 0f;
+
+            if (damageCoroutine != null)
+            {
+                StopCoroutine(damageCoroutine);
+                damageCoroutine = null;
+            }
+        }
+    }
+
+    
+
+    private IEnumerator DamageOverTime(float interval, int damageAmount)
+    {
+        while (true)
+        {
+            TakeDamage(damageAmount);
+            yield return new WaitForSeconds(interval);
         }
     }
 
