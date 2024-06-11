@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private Vector3 cursorPos;
+    private Vector2 cursorPos;
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
@@ -22,9 +22,9 @@ public class Projectile : MonoBehaviour
         mainCam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         cursorPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 direction = cursorPos - transform.position;
+        Vector2 direction = cursorPos - (Vector2)transform.position;
 
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+        rb.velocity = direction.normalized * force;
 
         if (direction.x < 0)
         {
@@ -36,7 +36,7 @@ public class Projectile : MonoBehaviour
 
     void Flip()
     {
-        Vector3 localScale = transform.localScale;
+        Vector3 localScale = transform.localScale; 
         localScale.x *= -1;
         transform.localScale = localScale;
     }
@@ -49,7 +49,6 @@ public class Projectile : MonoBehaviour
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)
             {
-                Debug.Log("Projectile hit an enemy and will deal damage.");
                 enemy.TakeDamage(damage);
             }
         }
@@ -62,8 +61,17 @@ public class Projectile : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        else if (collision.gameObject.CompareTag("Wall"))
+        {
+            BounceOff(collision);
+        }
+    }
+
+    private void BounceOff(Collider2D other)
+    {
+        Vector2 collisionNormal = ((Vector2)transform.position - other.ClosestPoint(transform.position)).normalized;
+        Vector2 newVelocity = Vector2.Reflect(rb.velocity, collisionNormal);
+        rb.velocity = newVelocity;
     }
 }
-
-
 

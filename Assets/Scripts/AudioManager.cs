@@ -79,7 +79,7 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.clip = backgroundMusic;
             audioSource.loop = true;
-            audioSource.pitch = 1f; // Ensure pitch is set to normal speed
+            audioSource.pitch = 1f;
             audioSource.Play();
         }
         else
