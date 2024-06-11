@@ -1,14 +1,10 @@
 using UnityEngine;
-using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
     public AudioClip backgroundMusic;
-    public AudioClip bossIntroClip;
-    public AudioClip bossMusic;
-
 
     public AudioClip shootClip;
     public AudioClip enemyHitClip;
@@ -26,7 +22,15 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
             audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+
+            audioSource.loop = false; // Ensure looping is initially off
+            audioSource.pitch = 1f; // Ensure pitch is set to normal speed
         }
         else
         {
@@ -71,39 +75,29 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBackgroundMusic()
     {
-        audioSource.clip = backgroundMusic;
-        audioSource.loop = true;
-        audioSource.Play();
+        if (backgroundMusic != null)
+        {
+            audioSource.clip = backgroundMusic;
+            audioSource.loop = true;
+            audioSource.pitch = 1f; // Ensure pitch is set to normal speed
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Background music clip not assigned!");
+        }
     }
 
     public void StopBackgroundMusic()
     {
-        audioSource.Stop();
+        if (audioSource.clip == backgroundMusic)
+        {
+            audioSource.Stop();
+        }
     }
 
-    public void PlayBossMusic()
+    public bool IsBackgroundMusicPlaying()
     {
-        StopBackgroundMusic();
-        StartCoroutine(PlayBossMusicCoroutine());
-    }
-
-    private IEnumerator PlayBossMusicCoroutine()
-    {
-        if (bossIntroClip != null)
-        {
-            audioSource.clip = bossIntroClip;
-            audioSource.loop = false;
-            audioSource.Play();
-            yield return new WaitForSeconds(bossIntroClip.length);
-        }
-
-        
-        if (bossMusic != null)
-        {
-            audioSource.clip = bossMusic;
-            audioSource.loop = true;
-            audioSource.Play();
-        }
+        return audioSource.clip == backgroundMusic && audioSource.isPlaying;
     }
 }
-
