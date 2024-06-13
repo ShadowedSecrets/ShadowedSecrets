@@ -41,6 +41,10 @@ public class playerMovement : MonoBehaviour
         {
             abilities.UsePestilence();
         }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            abilities.Echolocation();
+        }
 
 
     }

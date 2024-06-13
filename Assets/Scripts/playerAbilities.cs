@@ -34,6 +34,12 @@ public class playerAbilities : MonoBehaviour
     private Vector2 dashDirection;
     private Rigidbody2D rb;
 
+    //Echolocation Variables
+    public float numberOfProjectiles = 6f;
+    public float projectileSpeed = 4f;
+    public GameObject echoProjectile;
+    public float delay = 0.1f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -143,6 +149,31 @@ public class playerAbilities : MonoBehaviour
             slowTimer = slowCooldown;
             slowCooldownImage.fillAmount = 1;
         }
+    }
+
+    public void Echolocation()
+    {
+        StartCoroutine(FireCircularProjectiles());
+    }
+
+    private IEnumerator FireCircularProjectiles()
+    {
+        for (int i = 0; i < numberOfProjectiles; i++)
+        {
+            float angle = i * (360f / numberOfProjectiles);
+            Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
+            //direction.Normalize();
+            FireProjectile(direction);
+            yield return new WaitForSeconds(delay);
+        }
+        
+    }
+
+    private void FireProjectile(Vector3 direction)
+    {
+        GameObject projectile = Instantiate(echoProjectile, transform.position, Quaternion.identity);
+        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+        rb.velocity = direction * projectileSpeed;
     }
 
     private IEnumerator SlowEnemy(Enemy enemy)
