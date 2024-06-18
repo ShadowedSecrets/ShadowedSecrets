@@ -27,6 +27,7 @@ public class Boss : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
         abilityTimer = abilityInterval;
+
         currentHealth = maxHealth;
 
         if (bossHealthUI == null)
