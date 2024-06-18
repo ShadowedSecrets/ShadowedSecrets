@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 2.0f;
-    [SerializeField] private float spawnRateVariation = 0.5f;
+    [SerializeField] private float timeBetweenSpawns = 2.0f; // Time between each enemy spawn within a wave
     [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private int enemiesPerWave = 5;
+    [SerializeField] private float timeBetweenWaves = 10.0f;
     private bool canSpawn = false;
     private Coroutine spawnerCoroutine;
 
-    private void Start()
-    {
-
-    }
+    
 
     private IEnumerator Spawner()
     {
-        WaitForSeconds wait = new WaitForSeconds(spawnRate);
-
         while (true)
         {
             if (canSpawn)
             {
-                Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-                float waitTime = spawnRate + Random.Range(-spawnRateVariation, spawnRateVariation);
-                yield return new WaitForSeconds(waitTime);
+                for (int i = 0; i < enemiesPerWave; i++)
+                {
+                    Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+                    yield return new WaitForSeconds(timeBetweenSpawns);
+                }
+                yield return new WaitForSeconds(timeBetweenWaves);
             }
             else
             {
                 yield return null;
             }
-
-
         }
     }
 
@@ -54,7 +51,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 StopCoroutine(spawnerCoroutine);
                 spawnerCoroutine = null;
-            }    
+            }
         }
     }
 }
