@@ -5,12 +5,16 @@ using UnityEngine;
 public class Echo : MonoBehaviour
 {
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public int damage = 1;
 
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+
+        Destroy(gameObject, 2f);
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -48,6 +52,7 @@ public class Echo : MonoBehaviour
         {
             Debug.Log("Hit");
             BounceOff(collision);
+            
         }
     }
 
