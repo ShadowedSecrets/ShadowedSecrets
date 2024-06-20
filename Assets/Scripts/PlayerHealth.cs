@@ -55,6 +55,15 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void AddHealth()
+    {
+        if(health < maxHealth)
+        {
+            health += 1;
+        }
+    
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Light"))
@@ -62,6 +71,11 @@ public class PlayerHealth : MonoBehaviour
             isInLight = true;
             timeInLight = 0f;
 
+        }
+        if (other.CompareTag("Potion"))
+        {
+            AddHealth();
+            Destroy(other.gameObject);
         }
     }
 

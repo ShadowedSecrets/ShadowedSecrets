@@ -2616,7 +2616,7 @@ GameObject:
   - component: {fileID: 7624780097973327134}
   - component: {fileID: 4021067075707416142}
   - component: {fileID: 906022310265687567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3612,7 +3612,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -3791,7 +3791,7 @@ GameObject:
   - component: {fileID: 4885224532120595897}
   - component: {fileID: 2080906530977727312}
   - component: {fileID: 6921773551734673986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4347,7 +4347,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4368,7 +4368,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5236,7 +5236,7 @@ GameObject:
   - component: {fileID: 861640310755252325}
   - component: {fileID: 6172036699686028078}
   - component: {fileID: 2509483429671907456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6510,7 +6510,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6761,7 +6761,7 @@ GameObject:
   - component: {fileID: 8431121892890122919}
   - component: {fileID: 6704316473336136389}
   - component: {fileID: 6524076136918286920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8235,7 +8235,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -8800,10 +8800,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawners:
   - {fileID: 7088815268585725634}
-  - {fileID: 5580503417377513564}
+  - {fileID: 8738800648020292664}
   - {fileID: 8410651832714634392}
-  - {fileID: 8839396365718337779}
-  - {fileID: 5331401849896195099}
+  - {fileID: 8410651832714634392}
+  - {fileID: 2643839792876996248}
   - {fileID: 2643839792876996248}
 --- !u!1 &3484319764488995438
 GameObject:
@@ -8819,7 +8819,7 @@ GameObject:
   - component: {fileID: 7935586962604335216}
   - component: {fileID: 4476422348724301604}
   - component: {fileID: 9138074828520271229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -9463,7 +9463,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -12667,7 +12667,7 @@ GameObject:
   - component: {fileID: 6423925241995892756}
   - component: {fileID: 313046439522698421}
   - component: {fileID: 7661134162526597512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AboveGround1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17140,7 +17140,7 @@ GameObject:
   - component: {fileID: 1878902694385277476}
   - component: {fileID: 7644861157599509990}
   - component: {fileID: 2235786611622138361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Colliable5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17868,7 +17868,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -24510,7 +24510,7 @@ GameObject:
   - component: {fileID: 1537648189240371124}
   - component: {fileID: 6649490648341235992}
   - component: {fileID: 548343349319867693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collidable2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -25430,7 +25430,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -25451,7 +25451,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -27433,7 +27433,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -28893,7 +28893,7 @@ GameObject:
   - component: {fileID: 6749915275962008680}
   - component: {fileID: 9094371386116736509}
   - component: {fileID: 5567419705738358525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AboveGround2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35078,17 +35078,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 916576824500470166, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
   m_PrefabInstance: {fileID: 1855868762902898419}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8839396365718337779 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7163686487422606848, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
-  m_PrefabInstance: {fileID: 1855868762902898419}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2985122705460682108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35213,17 +35202,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 916576824500470166, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
   m_PrefabInstance: {fileID: 3322364243859537500}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5580503417377513564 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7163686487422606848, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
-  m_PrefabInstance: {fileID: 3322364243859537500}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3724904646100765502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35420,17 +35398,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f2b1ffa9e0f3640aaa04eebe18236f, type: 3}
---- !u!114 &5331401849896195099 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9190302270163210950, guid: d7f2b1ffa9e0f3640aaa04eebe18236f, type: 3}
-  m_PrefabInstance: {fileID: 3924450039352985309}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8110320864282152111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5114918607911717490, guid: d7f2b1ffa9e0f3640aaa04eebe18236f, type: 3}
@@ -35881,6 +35848,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1874373527946197504, guid: eeb30344fca1dbb46ae546b705a2df92, type: 3}
   m_PrefabInstance: {fileID: 7946390029721663902}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8738800648020292664 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1657688888924179878, guid: eeb30344fca1dbb46ae546b705a2df92, type: 3}
+  m_PrefabInstance: {fileID: 7946390029721663902}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8458266628346008420
 PrefabInstance:
   m_ObjectHideFlags: 0

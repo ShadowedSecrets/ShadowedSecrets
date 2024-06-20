@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6374297314435835246}
   - component: {fileID: 1911562236244243044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,8 @@ GameObject:
   - component: {fileID: 7387378185236885054}
   - component: {fileID: 716009942876187234}
   - component: {fileID: 7118885917043111903}
-  m_Layer: 0
+  - component: {fileID: 3851285589924323829}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -301,6 +302,10 @@ MonoBehaviour:
   slowRadius: 3
   slowAmount: 0.05
   pestilenceEffect: {fileID: 2405672017504739278, guid: fce2e3851ae5c1544b510a66161b896a, type: 3}
+  numberOfProjectiles: 6
+  projectileSpeed: 4
+  echoProjectile: {fileID: 0}
+  delay: 0.1
 --- !u!114 &7118885917043111903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +328,41 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   playerHealth: {fileID: 7387378185236885054}
+--- !u!70 &3851285589924323829
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834664755408865358}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004503506, y: -0.1621269}
+  m_Size: {x: 0.6667393, y: 1.6757464}
+  m_Direction: 0
 --- !u!1 &5084409811299272287
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5295558724736136835}
   - component: {fileID: 6823542890224864876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

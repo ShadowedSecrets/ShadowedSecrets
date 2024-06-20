@@ -1,111 +1,124 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
 
-public class Enemy : MonoBehaviour
+public class EnemyBAT : MonoBehaviour
 {
     public Transform target;
-    NavMeshAgent enemy;
     public float speed = 2.0f;
     public float rotateSpeed = 0.0025f;
+    public float zigzagAmplitude = 1.0f; // Amplitude of the zigzag
+    public float zigzagFrequency = 1.0f; // Frequency of the zigzag
+    public float dashSpeed = 5.0f; // Speed during the dash
+    public float dashDistance = 2.0f; // Distance to player to start dashing
+    public float dashDuration = 1.0f; // Duration of the dash
     private Rigidbody2D rb;
     public int damage = 1;
-    public int maxHealth = 3;
+    public int maxHealth = 3; // Maximum health for the enemy
     private int currentHealth;
     private float originalSpeed;
     private bool isDead = false;
-    public List<LootItem> lootTable = new List<LootItem>();
+    private bool isDashing = false;
+    private Vector2 dashTarget;
+    private Coroutine dashCoroutine;
 
-    //private Pathfinding pathfinding;
-   // private List<Node> path;
-    //private int pathIndex = 0;
+    public List<LootItem> lootTable = new List<LootItem>();
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //enemy = GetComponent<NavMeshAgent>();
-        //enemy.updateRotation = false;
-        //enemy.updateUpAxis = false;
         originalSpeed = speed;
-        currentHealth = maxHealth;
-        //pathfinding = FindObjectOfType<Pathfinding>();
+        currentHealth = maxHealth; // Initialize health
     }
 
     private void Update()
     {
-        /*if (!target)
+        if (!target)
         {
             GetTarget();
         }
-        else
+
+       
+
+        if (isDashing)
         {
-            if (path == null || pathIndex >= path.Count)
-            {
-                path = pathfinding.FindPath(transform.position, target.position);
-                pathIndex = 0;
-            }
-            if (path != null && pathIndex < path.Count)
-            {
-               MoveAlongPath();
-            }
-        }*/
+            DashTowardsTarget();
+        }
     }
 
     private void FixedUpdate()
     {
-       // rb.velocity = transform.up * speed;
+        if (!isDashing)
+        {
+            if (Vector2.Distance(transform.position, target.position) <= dashDistance)
+            {
+                isDashing = true;
+                dashTarget = target.position;
+                speed = dashSpeed;
+                dashCoroutine = StartCoroutine(StopDashAfterTime(dashDuration));
+               
+            }
+        }
     }
 
-    /*private void MoveAlongPath()
+
+
+    private void DashTowardsTarget()
     {
-        Node targetNode = path[pathIndex];
-        Vector2 targetDirection = ((Vector2)targetNode.worldPosition - (Vector2)transform.position).normalized;
+        Vector2 dashDirection = (dashTarget - (Vector2)transform.position).normalized;
+        rb.velocity = dashDirection * speed;
+    }
+
+    private void rotateTowardsTarget()
+    {
+        Vector2 targetDirection = ((Vector2)target.position - (Vector2)transform.position).normalized;
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+    }
 
-        if (Vector2.Distance(transform.position, targetNode.worldPosition) < 0.1f)
-        {
-            pathIndex++;
-        }
-    }*/
-
-    /*private void GetTarget()
+    private void GetTarget()
     {
-        enemy.SetDestination(target.position);
         if (GameObject.FindGameObjectWithTag("Player"))
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
         }
-    }*/
+    }
+
+    private IEnumerator StopDashAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isDashing = false;
+        speed = originalSpeed;
+        
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !isDead)
         {
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-            Die();
+            Die(); // Enemy dies after hitting the player
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Projectile"))
+        if (other.gameObject.CompareTag("Projectile") && !isDead)
         {
             TakeDamage(1);
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlayEnemyHitSound();
             }
-
         }
     }
 
     public void TakeDamage(int damageAmount)
     {
+        if (isDead) return; // Prevent taking damage if already dead
+
         currentHealth -= damageAmount;
         Debug.Log("Enemy took damage, current health: " + currentHealth);
 
@@ -123,6 +136,7 @@ public class Enemy : MonoBehaviour
         isDead = true;
         Score.score += 1;
 
+        // Notify the kill detector
         EnemyKillDetector killDetector = FindObjectOfType<EnemyKillDetector>();
         if (killDetector != null)
         {
@@ -133,7 +147,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        foreach (LootItem lootItem in lootTable)
+        foreach(LootItem lootItem in lootTable)
         {
             if (Random.Range(0f, 100f) <= lootItem.dropChance)
             {
@@ -152,11 +166,13 @@ public class Enemy : MonoBehaviour
     public void ModifySpeed(float speedFactor)
     {
         speed = originalSpeed * speedFactor;
+        
     }
 
     public void ResetSpeed()
     {
         speed = originalSpeed;
+        
     }
 
     public bool IsDead()
@@ -164,9 +180,3 @@ public class Enemy : MonoBehaviour
         return isDead;
     }
 }
-
-
-
-
-
-
