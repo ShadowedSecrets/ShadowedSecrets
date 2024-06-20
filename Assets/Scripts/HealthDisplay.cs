@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class HealthDisplay : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 4;
-    public Sprite emptyHealth;
-    public Sprite fullHealth;
-    public Image[] Hearts;
+    public int maxHealth = 10;
+    public Slider healthSlider;
     public PlayerHealth playerHealth;
 
 
     void Start()
     {
         health = maxHealth;
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = health;
     }
     void Update()
     {
@@ -26,25 +26,6 @@ public class HealthDisplay : MonoBehaviour
     {
         health = playerHealth.health;
         maxHealth = playerHealth.maxHealth;
-
-        for (int i = 0; i < Hearts.Length; i++)
-        {
-            if (i < health)
-            {
-                Hearts[i].sprite = fullHealth;
-            }
-            else
-            {
-                Hearts[i].sprite = emptyHealth;
-            }
-            if (i < maxHealth)
-            {
-                Hearts[i].enabled = true;
-            }
-            else
-            {
-                Hearts[i].enabled = false;
-            }
-        }
+        healthSlider.value = health;
     }
 }
