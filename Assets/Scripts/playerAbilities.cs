@@ -39,6 +39,7 @@ public class playerAbilities : MonoBehaviour
     public float projectileSpeed = 4f;
     public GameObject echoProjectile;
     public float delay = 0.1f;
+    private bool isEchoUnlocked = false;
 
     void Start()
     {
@@ -133,7 +134,7 @@ public class playerAbilities : MonoBehaviour
             effect.GetComponent<Animator>().Play("PestilenceWave");
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, slowRadius);
 
-            if(AudioManager.instance != null)
+            if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlayPestSound();
             }
@@ -143,7 +144,11 @@ public class playerAbilities : MonoBehaviour
                 if (enemy.CompareTag("Enemy"))
                 {
                     Debug.Log("Enemy found: " + enemy.name);
-                    StartCoroutine(SlowEnemy(enemy.GetComponent<Enemy>()));
+                    EnemyBATai enemyScript = enemy.GetComponent<EnemyBATai>();
+                    if (enemyScript != null)
+                    {
+                        enemyScript.ApplyFreeze(2f); // Adjust duration as needed
+                    }
                 }
             }
             slowTimer = slowCooldown;
@@ -151,9 +156,20 @@ public class playerAbilities : MonoBehaviour
         }
     }
 
+
+
+
+
     public void Echolocation()
     {
-        StartCoroutine(FireCircularProjectiles());
+        if (isEchoUnlocked)
+        {
+            StartCoroutine(FireCircularProjectiles());
+        }
+        else
+        {
+            Debug.Log("Echolocation ability is locked.");
+        }
     }
 
     private IEnumerator FireCircularProjectiles()
@@ -166,7 +182,6 @@ public class playerAbilities : MonoBehaviour
             FireProjectile(direction);
             yield return new WaitForSeconds(delay);
         }
-        
     }
 
     private void FireProjectile(Vector3 direction)
@@ -195,6 +210,11 @@ public class playerAbilities : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, slowRadius);
+    }
+
+    public void UnlockEcholocation()
+    {
+        isEchoUnlocked = true;
     }
 }
 

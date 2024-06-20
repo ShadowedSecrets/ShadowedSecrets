@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -11,7 +10,8 @@ public class EnemySpawner : MonoBehaviour
     private bool canSpawn = false;
     private Coroutine spawnerCoroutine;
 
-    
+    [SerializeField] private SummoningCircle summoningCircle;
+    [SerializeField] private float prewaveDuration = 2.0f; // Duration of the prewave effect
 
     private IEnumerator Spawner()
     {
@@ -19,6 +19,10 @@ public class EnemySpawner : MonoBehaviour
         {
             if (canSpawn)
             {
+                // Trigger the prewave effect
+                summoningCircle.StartPrewave(prewaveDuration);
+                yield return new WaitForSeconds(prewaveDuration);
+
                 for (int i = 0; i < enemiesPerWave; i++)
                 {
                     Instantiate(enemyPrefab, transform.position, Quaternion.identity);
