@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    [Header("------ Audio Clip ------")]
     public AudioClip backgroundMusic;
-
     public AudioClip shootClip;
     public AudioClip enemyHitClip;
     public AudioClip keyGrabbed;
@@ -14,6 +15,13 @@ public class AudioManager : MonoBehaviour
     public AudioClip playerHit;
     public AudioClip pestClip;
 
+    [Header("------ Sliders ------")]
+    public Slider masterVolumeSlider;
+    public Slider musicVolumeSlider;
+    public Slider sfxVolumeSlider;
+
+    private AudioSource musicSource;
+    //private AudioSource sfxSource;
     private AudioSource audioSource;
 
     private void Awake()
@@ -35,6 +43,52 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+    
+    void Start()
+    {
+        // Initialize sliders with saved values or default values
+        masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
+        sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
+
+        // Add listeners to sliders
+        masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
+        musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxVolumeSlider.onValueChanged.AddListener(SetSFXVolume);
+
+        //AudioSources, one for music and one for SFX
+        musicSource = GameObject.Find("MusicSource").GetComponent<AudioSource>();
+        //sfxSource = GameObject.Find("SFXSource").GetComponent<AudioSource>();
+
+        // Set initial values
+        SetMasterVolume(masterVolumeSlider.value);
+        SetMusicVolume(musicVolumeSlider.value);
+        SetSFXVolume(sfxVolumeSlider.value);
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        AudioListener.volume = volume;
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        if (musicSource != null)
+        {
+            musicSource.volume = volume;
+            PlayerPrefs.SetFloat("MusicVolume", volume);
+        }
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        if (audioSource != null)
+        {
+            audioSource.volume = volume;
+            PlayerPrefs.SetFloat("SFXVolume", volume);
         }
     }
 
@@ -77,10 +131,10 @@ public class AudioManager : MonoBehaviour
     {
         if (backgroundMusic != null)
         {
-            audioSource.clip = backgroundMusic;
-            audioSource.loop = true;
-            audioSource.pitch = 1f;
-            audioSource.Play();
+            musicSource.clip = backgroundMusic;
+            musicSource.loop = true;
+            musicSource.pitch = 1f;
+            musicSource.Play();
         }
         else
         {
@@ -90,9 +144,9 @@ public class AudioManager : MonoBehaviour
 
     public void StopBackgroundMusic()
     {
-        if (audioSource.clip == backgroundMusic)
+        if (musicSource.clip == backgroundMusic)
         {
-            audioSource.Stop();
+            musicSource.Stop();
         }
     }
 
