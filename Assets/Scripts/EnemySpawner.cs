@@ -54,7 +54,9 @@ public class EnemySpawner : MonoBehaviour
             if (spawnerCoroutine != null)
             {
                 StopCoroutine(spawnerCoroutine);
+
                 spawnerCoroutine = null;
+                Destroy(gameObject);
             }
         }
     }
