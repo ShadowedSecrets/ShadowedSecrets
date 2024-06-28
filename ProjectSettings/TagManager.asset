@@ -13,6 +13,7 @@ TagManager:
   - Boss
   - Light
   - Potion
+  - SafeDoor
   layers:
   - Default
   - TransparentFX
