@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip doorOpen;
     public AudioClip playerHit;
     public AudioClip pestClip;
+    public AudioClip HealthPotion;
 
     [Header("------ Sliders ------")]
     public Slider masterVolumeSlider;
@@ -125,6 +126,11 @@ public class AudioManager : MonoBehaviour
     public void PlayPlayerHitSound()
     {
         audioSource.PlayOneShot(playerHit);
+    }
+
+    public void PlayPotionSound()
+    {
+        audioSource.PlayOneShot(HealthPotion);
     }
 
     public void PlayBackgroundMusic()

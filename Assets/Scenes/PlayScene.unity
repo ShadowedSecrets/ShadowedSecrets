@@ -19168,7 +19168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4d950a985d68479aeafc41fe03aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 1
 --- !u!50 &1009463851
 Rigidbody2D:
   serializedVersion: 4
@@ -25197,6 +25196,7 @@ MonoBehaviour:
   doorOpen: {fileID: 8300000, guid: 5163f42b87ac41644abdf26b5e01c706, type: 3}
   playerHit: {fileID: 8300000, guid: 9749066c27b43924c87809e852f34be2, type: 3}
   pestClip: {fileID: 8300000, guid: 64e2a371060985441bd94a33e9a9ba8c, type: 3}
+  HealthPotion: {fileID: 8300000, guid: e28745e27a5c86c4aa109274b610d70a, type: 3}
   masterVolumeSlider: {fileID: 904556099}
   musicVolumeSlider: {fileID: 1192837945}
   sfxVolumeSlider: {fileID: 1679294386}
@@ -26700,7 +26700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4d950a985d68479aeafc41fe03aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 1
 --- !u!212 &1478982355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38235,7 +38234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4d950a985d68479aeafc41fe03aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 1
 --- !u!50 &1938481703
 Rigidbody2D:
   serializedVersion: 4

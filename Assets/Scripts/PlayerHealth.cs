@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,9 +15,11 @@ public class PlayerHealth : MonoBehaviour
     private float timeInLight = 0f;
     private bool isInLight = false;
 
+    public ParticleSystem collsionParticleSystem;
+    public SpriteRenderer sR;
+    public bool once = true;
 
 
-  
     void Start()
     {
         health = maxHealth;
@@ -75,6 +78,17 @@ public class PlayerHealth : MonoBehaviour
         if (other.CompareTag("Potion"))
         {
             AddHealth();
+            var em = collsionParticleSystem.emission;
+            var dur = collsionParticleSystem.duration;
+            em.enabled = true;
+            collsionParticleSystem.Play();
+            once = false;
+
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayPotionSound();
+            }
+
             Destroy(other.gameObject);
         }
     }
