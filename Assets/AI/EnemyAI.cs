@@ -36,7 +36,7 @@ public class EnemyBATai : MonoBehaviour
     private Rigidbody2D rb;
     public int damage = 1;
     public int maxHealth = 3;
-    private int currentHealth;
+    [SerializeField] private int currentHealth;
 
     private bool isDead = false;
     public List<LootItem> lootTable = new List<LootItem>();
@@ -45,6 +45,9 @@ public class EnemyBATai : MonoBehaviour
     private bool isFrozen = false;
     private float freezeDuration;
     private Coroutine currentCoroutine;
+
+
+
 
     private void Start()
     {
@@ -90,6 +93,10 @@ public class EnemyBATai : MonoBehaviour
         else if (aiData.GetTargetsCount() > 0)
         {
             aiData.currentTarget = aiData.targets[0];
+        }
+        else
+        {
+
         }
         OnMovementInput?.Invoke(movementInput);
     }
@@ -215,4 +222,10 @@ public class EnemyBATai : MonoBehaviour
             currentCoroutine = StartCoroutine(ChaseAndAttack());
         }
     }
+
+
 }
+
+
+
+

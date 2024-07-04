@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81183da35e4fc0149993c7eb8db48d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 5
+  detectionRadius: 10
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   showGizmos: 1
 --- !u!1 &3690338767572835397
 GameObject:
@@ -325,6 +325,7 @@ MonoBehaviour:
   movementDirectionSolver: {fileID: 6189478849556502687}
   damage: 1
   maxHealth: 3
+  currentHealth: 2
   lootTable:
   - itemPrefab: {fileID: 1236226325196643073, guid: bf51c75e0ffb07d49930c0fec220bbe2, type: 3}
     dropChance: 10
@@ -354,8 +355,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 3
   acceleration: 50
-  deacceleration: 100
+  deceleration: 100
   currentSpeed: 0
+  idleTime: 0.5
 --- !u!114 &7696296836096485423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1fbe8bbc397654ebe72dcc7dfd324c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDetectionRange: 10
+  targetDetectionRange: 15
   obstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 320

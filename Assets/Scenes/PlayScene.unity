@@ -23829,13 +23829,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 522589444}
     - target: {fileID: 716009942876187234, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: echoCooldownImage
+      value: 
+      objectReference: {fileID: 1892138454}
+    - target: {fileID: 716009942876187234, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: slowCooldownImage
       value: 
       objectReference: {fileID: 1457358563}
     - target: {fileID: 716009942876187234, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: plagueCooldownImage
       value: 
-      objectReference: {fileID: 1892138454}
+      objectReference: {fileID: 1954162809}
     - target: {fileID: 834664755408865358, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_Name
       value: Player
@@ -32297,6 +32301,17 @@ PrefabInstance:
       addedObject: {fileID: 1457358562}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+--- !u!114 &1954162809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9052849376868680034, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+  m_PrefabInstance: {fileID: 1954162808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2039645317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1993199547678132719, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
