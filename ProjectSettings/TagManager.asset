@@ -15,6 +15,7 @@ TagManager:
   - Potion
   - SafeDoor
   - GemOne
+  - Pushable
   layers:
   - Default
   - TransparentFX
