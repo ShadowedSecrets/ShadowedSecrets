@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Crystals : MonoBehaviour
@@ -6,6 +7,13 @@ public class Crystals : MonoBehaviour
     public GameObject redCrystal;
     public GameObject yellowCrystal;
     public GameObject reward;
+    public GameObject reward2;
+    [SerializeField] private List<EnemySpawner> enemySpawners;
+
+    [SerializeField] public Transform rewardDrop;
+
+
+
 
     private int destructionIndex = 0;
 
@@ -25,21 +33,26 @@ public class Crystals : MonoBehaviour
 
             if (destructionIndex == 3)
             {
-               
                 RewardPlayer();
+
+                foreach (EnemySpawner spawner in enemySpawners)
+                {
+                    Destroy(spawner.gameObject);
+                }
+                
             }
         }
         else
         {
-            
             RespawnCrystals();
         }
     }
 
     private void RewardPlayer()
     {
-        Instantiate(reward, transform.position, Quaternion.identity);
-        
+        Instantiate(reward, rewardDrop.position, Quaternion.identity);
+        Instantiate(reward2, rewardDrop.position, Quaternion.identity);
+
         destructionIndex = 0;
     }
 

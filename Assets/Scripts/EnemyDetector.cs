@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class EnemyKillDetector : MonoBehaviour
 {
-    public float detectionRadius = 5f; // Radius to detect enemy deaths
-    public int requiredKills = 10; // Number of kills required to stop spawners and spawn a key
-    public GameObject keyPrefab; // The key prefab to spawn
-    public Transform keySpawnPoint; // The location to spawn the key
-    public List<GameObject> enemySpawners; // List of enemy spawners to stop
+    public float detectionRadius = 5f; 
+    public int requiredKills = 10; 
+    public GameObject keyPrefab;
+    public Transform keySpawnPoint; 
+    public List<GameObject> enemySpawners; 
 
-    private int killCount = 0; // Counter for the number of enemies killed
+    private int killCount = 0;
 
     void Start()
     {
-        // Optionally, visualize the detection radius in the editor
+        
         CircleCollider2D collider = gameObject.AddComponent<CircleCollider2D>();
         collider.isTrigger = true;
         collider.radius = detectionRadius;

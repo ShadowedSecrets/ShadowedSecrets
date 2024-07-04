@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SafeDoor : MonoBehaviour
 {
-
+    [SerializeField] private List<EnemySpawner> enemySpawners;
     private Rigidbody2D rb;
     
     void Start()
@@ -22,6 +22,13 @@ public class SafeDoor : MonoBehaviour
                 AudioManager.instance.PlayDoorOpenSound();
             }
             Destroy(gameObject);
+            foreach (EnemySpawner spawner in enemySpawners)
+            {
+                if (spawner != null)
+                {
+                    spawner.StartSpawn();
+                }
+            }
         }
     }
 }
