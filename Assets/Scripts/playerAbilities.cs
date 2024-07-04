@@ -9,13 +9,15 @@ public class playerAbilities : MonoBehaviour
     public Image plagueCooldownImage;
     public Image dashCooldownImage;
     public Image slowCooldownImage;
+    public Image echoCooldownImage;
 
     // COOLDOWNS
     public float plagueCooldown = 0.4f;
     public float slowCooldown = 6f;
+    public float dashCooldown = 3f;
+    public float echoCooldown = 10f;
 
     // DASH VARIABLES
-    public float dashCooldown = 3f;
     public float dashSpeed = 21f;
     public float dashDuration = 0.2f;
 
@@ -23,6 +25,7 @@ public class playerAbilities : MonoBehaviour
     private float dashTimer;
     private float slowTimer;
     private float dashTime;
+    private float echoTimer;
 
     // PESTILENCE VARIABLES
     public float slowDuration = 3f;
@@ -39,6 +42,7 @@ public class playerAbilities : MonoBehaviour
     public float projectileSpeed = 4f;
     public GameObject echoProjectile;
     public float delay = 0.1f;
+
     private bool isEchoUnlocked = false;
 
     void Start()
@@ -47,10 +51,12 @@ public class playerAbilities : MonoBehaviour
         plagueTimer = 0f;
         dashTimer = 0f;
         slowTimer = 0f;
+        echoTimer = 0f;
 
         plagueCooldownImage.fillAmount = 0;
         dashCooldownImage.fillAmount = 0;
         slowCooldownImage.fillAmount = 0;
+        echoCooldownImage.fillAmount = 0;
     }
 
     void Update()
@@ -63,6 +69,16 @@ public class playerAbilities : MonoBehaviour
         else
         {
             plagueCooldownImage.fillAmount = 0;
+        }
+
+        if (echoTimer > 0f)
+        {
+            echoTimer -= Time.deltaTime;
+            echoCooldownImage.fillAmount = echoTimer / echoCooldown;
+        }
+        else
+        {
+            echoCooldownImage.fillAmount = 0;
         }
 
         if (dashTimer > 0f)
@@ -162,13 +178,19 @@ public class playerAbilities : MonoBehaviour
 
     public void Echolocation()
     {
-        if (isEchoUnlocked)
+        if (isEchoUnlocked && echoTimer <= 0f)
         {
             StartCoroutine(FireCircularProjectiles());
+            echoTimer = echoCooldown;  
+            echoCooldownImage.fillAmount = 1;
+        }
+        else if (!isEchoUnlocked)
+        {
+            Debug.Log("Echolocation ability is locked.");
         }
         else
         {
-            Debug.Log("Echolocation ability is locked.");
+            Debug.Log("Echolocation is on cooldown.");
         }
     }
 
@@ -178,7 +200,7 @@ public class playerAbilities : MonoBehaviour
         {
             float angle = i * (360f / numberOfProjectiles);
             Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
-            //direction.Normalize();
+            
             FireProjectile(direction);
             yield return new WaitForSeconds(delay);
         }
