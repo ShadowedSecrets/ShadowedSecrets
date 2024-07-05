@@ -1644,8 +1644,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0041499734, y: 0.069949985, z: 0}
-    m_Extent: {x: 1.4951501, y: 1.56785, z: 0}
+    m_Center: {x: -0.0040500164, y: 0.0697, z: 0}
+    m_Extent: {x: 1.49555, y: 1.5678, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2476,8 +2476,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09169996, y: 0.17905, z: 0}
-    m_Extent: {x: 3.8175, y: 1.08175, z: 0}
+    m_Center: {x: -0.09130001, y: 0.1792, z: 0}
+    m_Extent: {x: 3.8187, y: 1.0813999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25419,8 +25419,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.52059996, y: 0.11015001, z: 0}
-    m_Extent: {x: 4.2729, y: 1.10195, z: 0}
+    m_Center: {x: -0.52055, y: 0.110000014, z: 0}
+    m_Extent: {x: 4.2740498, y: 1.102, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25627,8 +25627,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5207499, y: 0.11010003, z: 0}
-    m_Extent: {x: 4.27375, y: 1.1028, z: 0}
+    m_Center: {x: -0.52059996, y: 0.10944998, z: 0}
+    m_Extent: {x: 4.2736, y: 1.10285, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -27002,8 +27002,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00395, y: 0.06949997, z: 0}
-    m_Extent: {x: 1.49525, y: 1.5683, z: 0}
+    m_Center: {x: -0.0034000278, y: 0.069000006, z: 0}
+    m_Extent: {x: 1.4961, y: 1.5685, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33532,6 +33532,10 @@ PrefabInstance:
     - target: {fileID: 5974855522838632074, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_Name
       value: SpotLight2D15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423925241995892756, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.066
       objectReference: {fileID: 0}
     - target: {fileID: 6466614932818099545, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_PointLightInnerAngle
