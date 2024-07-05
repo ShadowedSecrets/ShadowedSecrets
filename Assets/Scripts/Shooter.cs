@@ -12,8 +12,7 @@ public class Shooter : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
-    
-    
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -30,10 +29,10 @@ public class Shooter : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotationZ);
 
-        if(!canFire)
+        if (!canFire)
         {
             timer += Time.deltaTime;
-            if(timer > timeBetweenFiring)
+            if (timer > timeBetweenFiring)
             {
                 canFire = true;
                 timer = 0;
@@ -43,7 +42,13 @@ public class Shooter : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canFire)
         {
             canFire = false;
-            Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+
+            
+            Quaternion bulletRotation = Quaternion.Euler(0, 0, rotationZ - 90); 
+
+            
+            Instantiate(bullet, bulletTransform.position, bulletRotation);
+
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlayShootSound();
