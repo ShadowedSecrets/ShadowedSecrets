@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Projectile
+  - KeyOne
+  - Enemy
+  - KeyTwo
+  - Undefined
+  - Wall
+  - Boss
+  - Light
+  - Potion
+  - SafeDoor
+  - GemOne
+  - Pushable
   layers:
   - Default
   - TransparentFX
@@ -11,9 +23,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Obstacle
   - 
   - 
   - 
@@ -38,6 +50,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 3976989563
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AboveGround
+    uniqueID: 84801845
     locked: 0
