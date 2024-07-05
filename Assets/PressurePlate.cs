@@ -11,6 +11,7 @@ public class PressurePlate : MonoBehaviour
         if (other.CompareTag("Player") || other.CompareTag("Pushable"))
         {
             isActivated = true;
+            Debug.Log("Pressure Plate Activated");
         }
     }
 

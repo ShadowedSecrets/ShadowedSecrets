@@ -16,7 +16,7 @@ public class DoorThree : MonoBehaviour
             }
             GetComponent<ParticleSystem>().Play();
             GetComponent<SpriteRenderer>().enabled = false;
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
             Invoke(nameof(DestroyObj), 0.1f);
             foreach (EnemySpawner spawner in enemySpawners2)
             {
