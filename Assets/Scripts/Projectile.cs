@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     public float force;
     public int damage = 1;
     private float timeToDelete = 2f;
+    public GameObject destroy;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class Projectile : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
+                Destroy(gameObject);
             }
         }
         else if (collision.gameObject.CompareTag("Boss"))
@@ -66,6 +68,16 @@ public class Projectile : MonoBehaviour
             BounceOff(collision);
         }
     }
+
+    // void OnCollisionEnter2D(Collision2D other)
+    //{
+    //    if (other.gameObject.tag == "Enemy")
+    //    {
+    //        GetComponent<SpriteRenderer>().enabled = false;
+
+    //        Destroy(gameObject,0.5f);
+    //    }
+    //}
 
     private void BounceOff(Collider2D other)
     {
