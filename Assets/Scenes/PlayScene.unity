@@ -23888,6 +23888,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8754588877363549738, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20b0a487f75279844b589552d6bd2f78, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32942,10 +32946,78 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 252996861255932201, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D5
+      objectReference: {fileID: 0}
+    - target: {fileID: 943807915545805070, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121698077406091969, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831514359513232550, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849585217275903596, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: 'SpotLight2D1 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987869391205343650, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038907960627764389, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546952718527675422, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546952718527675422, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 2643839792876996248, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: summoningCircle
       value: 
       objectReference: {fileID: 812397014}
+    - target: {fileID: 2866342444837706611, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277054738735074547, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544756926412255751, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3836705748228938863, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 43.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840264392036704211, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033072790382277156, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038955386830963465, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153967890399302146, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D4
+      objectReference: {fileID: 0}
     - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_Tiles.Array.data[11].second.m_AllTileFlags
       value: 1
@@ -32954,18 +33026,102 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[12].second.m_AllTileFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4632051370375573287, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647514063748200122, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680190985295463207, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777579957511002622, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170140627266652276, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530505575305148116, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D3
+      objectReference: {fileID: 0}
     - target: {fileID: 5555131703616515030, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_Name
       value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564057027258897189, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849525596285657711, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974855522838632074, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466614932818099545, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466614932818099545, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680240418093149905, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703351384118283396, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824949832190670624, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D2
       objectReference: {fileID: 0}
     - target: {fileID: 7088815268585725634, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: summoningCircle
       value: 
       objectReference: {fileID: 1465736295}
+    - target: {fileID: 7089614091972863981, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276383678701219282, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276383678701219282, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 7676163853125739104, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: summoningCircle
       value: 
       objectReference: {fileID: 203254127}
+    - target: {fileID: 7692627159470176900, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861709478040062502, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180019492429051300, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275049461195727803, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D6
+      objectReference: {fileID: 0}
     - target: {fileID: 8393468693164643961, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: summoningCircle
       value: 
@@ -32974,10 +33130,18 @@ PrefabInstance:
       propertyPath: summoningCircle
       value: 
       objectReference: {fileID: 497777209}
+    - target: {fileID: 8426265892099093434, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D11
+      objectReference: {fileID: 0}
     - target: {fileID: 8695890797474356976, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: summoningCircle
       value: 
       objectReference: {fileID: 568648232}
+    - target: {fileID: 8811292708217994079, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: SpotLight2D3
+      objectReference: {fileID: 0}
     - target: {fileID: 8865697903802689765, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.06
@@ -33017,6 +33181,10 @@ PrefabInstance:
     - target: {fileID: 8865697903802689765, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009317149483449537, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Name
+      value: 'SpotLight2D1 '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33059,6 +33227,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 555209678185188835, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20b0a487f75279844b589552d6bd2f78, type: 2}
     - target: {fileID: 2060466107662143527, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
       propertyPath: enemySpawners.Array.data[0]
       value: 
@@ -33111,6 +33283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7701297138581853888, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20b0a487f75279844b589552d6bd2f78, type: 2}
     m_RemovedComponents:
     - {fileID: 6031681423362462167, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
     m_RemovedGameObjects:
@@ -33459,6 +33635,22 @@ PrefabInstance:
     - target: {fileID: 1516030551059845338, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
       propertyPath: m_Name
       value: TheLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112030011745982889, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112030011745982889, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112030011745982889, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112030011745982889, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6813704294558298387, guid: 42b28be6072fd4a4fb8fa75237d9b583, type: 3}
       propertyPath: m_LocalPosition.x
