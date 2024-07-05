@@ -112,7 +112,7 @@ public class Boss : MonoBehaviour
         Debug.Log("Boss died");
         Destroy(gameObject);
         bossHealthUI.Hide();
-        SceneManager.LoadScene("WinScene");
+        SceneManager.LoadScene("FloorTwoScene");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
