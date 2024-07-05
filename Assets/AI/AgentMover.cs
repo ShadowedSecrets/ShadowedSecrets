@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class AgentMover : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-
     [SerializeField]
-    private float maxSpeed = 2, acceleration = 50, deacceleration = 100;
+    private float maxSpeed = 2, acceleration = 50, deceleration = 100;
     [SerializeField]
     private float currentSpeed = 0;
     private Vector2 oldMovementInput;
+    private Vector2 idleDirection;
+    private float idleTimer;
+    public float idleTime = 0.5f;
+
     public Vector2 MovementInput { get; set; }
 
     private void Awake()
@@ -18,20 +23,43 @@ public class AgentMover : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        // Initialize movement direction randomly
+        idleDirection = Random.insideUnitCircle.normalized;
+        idleTimer = idleTime;
+    }
+
     private void FixedUpdate()
     {
-        if (MovementInput.magnitude > 0 && currentSpeed >= 0)
+        if (MovementInput.magnitude > 0)
         {
+            // Update movement
             oldMovementInput = MovementInput;
-            currentSpeed += acceleration * maxSpeed * Time.deltaTime;
+            currentSpeed += acceleration * Time.deltaTime;
+            currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
         }
         else
         {
-            currentSpeed -= deacceleration * maxSpeed * Time.deltaTime;
+            // Handle idle movement
+            if (idleTimer > 0)
+            {
+                // Idle movement
+                currentSpeed = 1f; // Idle speed
+                rb2d.velocity = idleDirection * currentSpeed;
+                idleTimer -= Time.deltaTime;
+            }
+            else
+            {
+                // Change direction and reset timer
+                idleDirection = Random.insideUnitCircle.normalized;
+                idleTimer = idleTime;
+            }
+
+            return; // Exit FixedUpdate to avoid overwriting velocity
         }
-        currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
+
+        // Apply movement
         rb2d.velocity = oldMovementInput * currentSpeed;
-
     }
-
 }

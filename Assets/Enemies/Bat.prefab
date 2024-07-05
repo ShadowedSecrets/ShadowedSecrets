@@ -324,6 +324,7 @@ MonoBehaviour:
   movementDirectionSolver: {fileID: 6189478849556502687}
   damage: 1
   maxHealth: 3
+  currentHealth: 1
   lootTable:
   - itemPrefab: {fileID: 1236226325196643073, guid: bf51c75e0ffb07d49930c0fec220bbe2, type: 3}
     dropChance: 10
@@ -353,8 +354,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 4
   acceleration: 50
-  deacceleration: 100
+  deceleration: 100
   currentSpeed: 0
+  idleTime: 0.5
 --- !u!1 &4161737551595661707
 GameObject:
   m_ObjectHideFlags: 0
