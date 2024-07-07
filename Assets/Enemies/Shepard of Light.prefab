@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1960571518541224876}
   - component: {fileID: 4516051969867888991}
   - component: {fileID: 6512842004347702032}
+  - component: {fileID: 8147182804202220563}
   m_Layer: 1
   m_Name: Shepard of Light
   m_TagString: Boss
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1458135, y: 34.80145, z: 0}
-  m_LocalScale: {x: 3.3224874, y: 3.3224874, z: 3.3224874}
+  m_LocalScale: {x: 5.8774805, y: 5.8774805, z: 5.8774805}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -302859041, guid: 8fc7b60562ed6e9458fae1e9eeeb2861, type: 3}
+  m_Sprite: {fileID: -700109172, guid: e0d264815b4afae4f9e86c78f3b8a2f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7, y: 0.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -146,8 +147,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13777626, y: -0.28747377}
-  m_Size: {x: 0.51387066, y: 0.61034715}
+  m_Offset: {x: 0.004424592, y: -0.032348983}
+  m_Size: {x: 0.3131165, y: 0.6142484}
   m_Direction: 0
 --- !u!114 &6512842004347702032
 MonoBehaviour:
@@ -169,3 +170,24 @@ MonoBehaviour:
   projectileSpeed: 6
   maxHealth: 45
   bossHealthUI: {fileID: 0}
+--- !u!95 &8147182804202220563
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189859382025205487}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8d32354d39792d42a34796365716d10, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
