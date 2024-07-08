@@ -163,6 +163,3 @@ public class Boss : MonoBehaviour
         return currentHealth;
     }
 }
-
-
-

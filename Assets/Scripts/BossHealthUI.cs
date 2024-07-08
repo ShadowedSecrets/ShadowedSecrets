@@ -8,8 +8,9 @@ public class BossHealthUI : MonoBehaviour
     public GameObject bossNameTextObject;
 
     private Slider healthBar; 
-    private TextMeshProUGUI bossNameText; 
+    private TextMeshProUGUI bossNameText;
     private Boss boss;
+    
 
     void Start()
     {
