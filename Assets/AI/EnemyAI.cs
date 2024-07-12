@@ -46,6 +46,13 @@ public class EnemyBATai : MonoBehaviour
     private float freezeDuration;
     private Coroutine currentCoroutine;
 
+    //knockback variables 
+    public float knockbackForce = 10f;
+    public float knockbackDuration = 0.2f;
+
+    // sprite renderer 
+    public SpriteRenderer Sprite;
+
 
 
 
@@ -135,7 +142,9 @@ public class EnemyBATai : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Projectile"))
         {
-            TakeDamage(1);
+            TakeDamage(1, other);
+            
+                   
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlayEnemyHitSound();
@@ -143,7 +152,7 @@ public class EnemyBATai : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount, Collider2D other)
     {
         currentHealth -= damageAmount;
         Debug.Log("Enemy took damage, current health: " + currentHealth);
@@ -152,6 +161,11 @@ public class EnemyBATai : MonoBehaviour
         {
             Die();
         }
+        else
+        {
+            ApplyKnockBack(0.3f);
+        }
+        
     }
 
     private void Die()
@@ -207,6 +221,7 @@ public class EnemyBATai : MonoBehaviour
             StartCoroutine(FreezeEnemy());
         }
     }
+    
 
     private IEnumerator FreezeEnemy()
     {
@@ -222,6 +237,34 @@ public class EnemyBATai : MonoBehaviour
             currentCoroutine = StartCoroutine(ChaseAndAttack());
         }
     }
+
+    public void ApplyKnockBack(float duration)
+    {
+        //Vector2 difference = transform.position - other.transform.position;
+        //transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+
+        freezeDuration = duration;
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+        StartCoroutine(EnemyStun());
+    }
+    public IEnumerator EnemyStun()
+    {
+        movementInput = Vector2.zero;
+        OnMovementInput?.Invoke(movementInput);
+        yield return new WaitForSeconds(freezeDuration);
+
+        if (aiData.currentTarget != null)
+        {
+            currentCoroutine = StartCoroutine(ChaseAndAttack());
+            
+        }
+        
+    }
+
+
 
 
 }

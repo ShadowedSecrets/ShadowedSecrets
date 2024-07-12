@@ -329,6 +329,9 @@ MonoBehaviour:
   lootTable:
   - itemPrefab: {fileID: 1236226325196643073, guid: bf51c75e0ffb07d49930c0fec220bbe2, type: 3}
     dropChance: 10
+  knockbackForce: 10
+  knockbackDuration: 0.2
+  Sprite: {fileID: 5125712765601986701}
 --- !u!114 &1655630141790354207
 MonoBehaviour:
   m_ObjectHideFlags: 0
