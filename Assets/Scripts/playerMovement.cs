@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Experimental;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class playerMovement : MonoBehaviour
 
 
     private playerAbilities abilities;
+    private Animator animator;
 
     void Start()
     {
@@ -19,6 +21,8 @@ public class playerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         //refrence for abilities
         abilities = GetComponent<playerAbilities>();
+        //animator
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -46,7 +50,28 @@ public class playerMovement : MonoBehaviour
             abilities.Echolocation();
         }
 
+        UpdateMovement();
 
+    }
+    private void UpdateMovement()
+    {
+        animator.SetInteger("IsWalking", 0);
+        if (Input.GetKey(KeyCode.W))
+        {
+            animator.SetInteger("IsWalking", 2);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {  
+            animator.SetInteger("IsWalking", 1);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            animator.SetInteger("IsWalking", 3);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            animator.SetInteger("IsWalking", 4);
+        }
     }
     private void FixedUpdate()
     {
