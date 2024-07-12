@@ -56,4 +56,7 @@ public class playerMovement : MonoBehaviour
             rb.MovePosition(newPosition);
            
         }
-    } }
+    }
+
+    
+}

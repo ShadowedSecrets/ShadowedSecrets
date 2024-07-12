@@ -16,6 +16,9 @@ TagManager:
   - SafeDoor
   - GemOne
   - Pushable
+  - CheckPoint1
+  - CheckPoint2
+  - CheckPoint3
   layers:
   - Default
   - TransparentFX
