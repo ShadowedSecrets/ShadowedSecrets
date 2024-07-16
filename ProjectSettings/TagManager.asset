@@ -20,6 +20,9 @@ TagManager:
   - CheckPoint2
   - CheckPoint3
   - SpawnPoint
+  - CheckPoint1.lvl2
+  - CheckPoint2.lvl2
+  - CheckPoint3.lvl2
   layers:
   - Default
   - TransparentFX
