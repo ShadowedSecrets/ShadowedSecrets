@@ -1163,8 +1163,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.004400015, y: 0.068400025, z: 0}
-    m_Extent: {x: 1.4966, y: 1.5681, z: 0}
+    m_Center: {x: -0.0046499968, y: 0.06865001, z: 0}
+    m_Extent: {x: 1.49635, y: 1.56795, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1582,8 +1582,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.090849996, y: 0.17889997, z: 0}
-    m_Extent: {x: 3.81925, y: 1.0816, z: 0}
+    m_Center: {x: -0.09074998, y: 0.17955002, z: 0}
+    m_Extent: {x: 3.81915, y: 1.08135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13300,7 +13300,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 20
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -24703,8 +24703,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.52059996, y: 0.10949999, z: 0}
-    m_Extent: {x: 4.2736, y: 1.1024001, z: 0}
+    m_Center: {x: -0.5208, y: 0.10900003, z: 0}
+    m_Extent: {x: 4.273, y: 1.1024001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24911,8 +24911,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5210501, y: 0.10949999, z: 0}
-    m_Extent: {x: 4.2726502, y: 1.1029, z: 0}
+    m_Center: {x: -0.5200499, y: 0.10980001, z: 0}
+    m_Extent: {x: 4.27305, y: 1.1028, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25767,8 +25767,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00455004, y: 0.06920004, z: 0}
-    m_Extent: {x: 1.49575, y: 1.5689, z: 0}
+    m_Center: {x: -0.0042500496, y: 0.06889999, z: 0}
+    m_Extent: {x: 1.49605, y: 1.5678, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31564,6 +31564,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1216841538124198122, guid: 4beb62dcab1106e4c9dac7485def41d2, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216841538124198122, guid: 4beb62dcab1106e4c9dac7485def41d2, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216841538124198122, guid: 4beb62dcab1106e4c9dac7485def41d2, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 3134154678707415650, guid: 4beb62dcab1106e4c9dac7485def41d2, type: 3}
       propertyPath: enemySpawners.Array.data[0]
       value: 

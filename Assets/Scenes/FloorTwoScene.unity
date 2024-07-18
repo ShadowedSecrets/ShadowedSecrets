@@ -437,8 +437,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2565001, y: 0.12025002, z: 0}
-    m_Extent: {x: 3.6341, y: 1.04645, z: 0}
+    m_Center: {x: -1.25635, y: 0.11965001, z: 0}
+    m_Extent: {x: 3.63375, y: 1.04705, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -509,9 +509,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7551899338357966229, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551899338357966229, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8175227272602534057, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
       propertyPath: m_Name
       value: GemTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.25490192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.27477613
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.7764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736621295104098226, guid: e764efc91974f6844ac246ce3e9e87c1, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 0.627451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1125,8 +1157,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.052550077, y: 4.166, z: 0}
-    m_Extent: {x: 6.0111504, y: 3.3051, z: 0}
+    m_Center: {x: 0.05310011, y: 4.16685, z: 0}
+    m_Extent: {x: 6.0106, y: 3.30435, z: 0}
   m_PointLightInnerAngle: 180
   m_PointLightOuterAngle: 180
   m_PointLightInnerRadius: 0
@@ -1862,8 +1894,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.25705, y: 0.119399995, z: 0}
-    m_Extent: {x: 3.63375, y: 1.0473, z: 0}
+    m_Center: {x: -1.2557001, y: 0.11945003, z: 0}
+    m_Extent: {x: 3.6335, y: 1.04755, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2072,8 +2104,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.017449856, y: 5.0756, z: 0}
-    m_Extent: {x: 5.95715, y: 6.7076, z: 0}
+    m_Center: {x: 0.017100096, y: 5.07555, z: 0}
+    m_Extent: {x: 5.957, y: 6.70765, z: 0}
   m_PointLightInnerAngle: 180
   m_PointLightOuterAngle: 180
   m_PointLightInnerRadius: 0
@@ -4276,8 +4308,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2569001, y: 0.11955002, z: 0}
-    m_Extent: {x: 3.6337001, y: 1.04595, z: 0}
+    m_Center: {x: -1.2563499, y: 0.11995, z: 0}
+    m_Extent: {x: 3.6339498, y: 1.04655, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4738,7 +4770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1990167623
 Transform:
   m_ObjectHideFlags: 0
@@ -4788,8 +4820,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.2708999, y: 4.6032, z: 0}
-    m_Extent: {x: 4.0144, y: 5.8616, z: 0}
+    m_Center: {x: 0.27030003, y: 4.6022, z: 0}
+    m_Extent: {x: 4.0142, y: 5.8617997, z: 0}
   m_PointLightInnerAngle: 180
   m_PointLightOuterAngle: 180
   m_PointLightInnerRadius: 0
@@ -4871,8 +4903,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2573, y: 0.1198, z: 0}
-    m_Extent: {x: 3.6336002, y: 1.0462, z: 0}
+    m_Center: {x: -1.2565, y: 0.119700015, z: 0}
+    m_Extent: {x: 3.6332, y: 1.0466001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -22824,7 +22856,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.82159084, b: 0, a: 1}
+      maxColor: {r: 0.7132075, g: 0.7132075, b: 0.7132075, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -23909,7 +23941,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.801461, b: 0, a: 1}
+        key0: {r: 0.79622644, g: 0.79622644, b: 0.79622644, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}

@@ -14,8 +14,10 @@ public class DoorTwo : MonoBehaviour
             {
                 AudioManager.instance.PlayDoorOpenSound();
             }
-            Destroy(gameObject);
+            GetComponent<ParticleSystem>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
             Destroy(other.gameObject);
+            Invoke(nameof(DestroyObj), 0.1f);
             foreach (EnemySpawner spawner in enemySpawners)
             {
                 if (spawner != null)
@@ -24,6 +26,10 @@ public class DoorTwo : MonoBehaviour
                 }
             }
         }
+    }
+    private void DestroyObj()
+    {
+        Destroy(gameObject);
     }
 }
 
