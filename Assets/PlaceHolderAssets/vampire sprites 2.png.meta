@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a64c939dcb21824c85dc21316e9d6c7
+guid: 10ba1c46ea24a96489dec48be1b85c20
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -110,7 +110,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vampire sprites 1_0
+      name: vampire sprites 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50186920b869b704ab8d3fb8a3a41050
+      internalID: -608685022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98994f7bb24aebf4eb8c2a569ebdff79
+      internalID: -817860623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c0587f1e532ea41a55bb9310ad525d
+      internalID: -946402598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b5cfd316527dc44977ac15d1f00e74
+      internalID: -927736948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7671d370d11cfca41acf06120d004242
+      internalID: -425280045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e636c84151bb7c441915efbf43af8a96
+      internalID: 1339358218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd1ded896f461143bb316176003308b
+      internalID: 93536613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f8ad41d77bf4d48a7398500c84c438
+      internalID: -1660765134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55c6c296887f1ab4fac02dcdcd27fca6
-      internalID: -1637769346
+      spriteID: bf11d7a251ba843499c5cb55aeea50eb
+      internalID: 1024126229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_1
+      name: vampire sprites 2_9
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a21b1148a42b794283ff1353c57b3f9
-      internalID: -2132709727
+      spriteID: fe6ff301df9710943b74456e1a09272b
+      internalID: -877653296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_2
+      name: vampire sprites 2_10
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e858a410ad141e4493060b0549af765
-      internalID: -788083659
+      spriteID: 0b35ab5cba73bc54badead6710a48fec
+      internalID: 1977838885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_3
+      name: vampire sprites 2_11
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +355,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3453feae458f19479ba52126aa8ffff
-      internalID: 1075220559
+      spriteID: 827eeb55617595a46aff9834fddacd39
+      internalID: -901292673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_4
+      name: vampire sprites 2_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a8e2f4417772c40966f8fb5dd68012
+      internalID: -1166118422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd288a9513bf40f4a9e9ccb5ca0bc7c3
+      internalID: -1963977882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa897d1127fbe2c459a2aafbaede6ecd
+      internalID: -118389822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67859d5c1288b44b99ba93a66723d3a
+      internalID: 1662120483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vampire sprites 2_16
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26169429a6dc56d42925800642bc20ea
-      internalID: 1127739902
+      spriteID: 6f98cf1efbc60f54b91ed3d13d003d24
+      internalID: 2144000781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_5
+      name: vampire sprites 2_17
       rect:
         serializedVersion: 2
         x: 32
@@ -229,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3e48eddba3e2c04093eabaf4f91006f
-      internalID: -1027817604
+      spriteID: b70a017298c5e1b4baf10ba01d6597cc
+      internalID: 2052799552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_6
+      name: vampire sprites 2_18
       rect:
         serializedVersion: 2
         x: 64
@@ -250,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcee16a75418b834da2920daa6d65941
-      internalID: -13876435
+      spriteID: 446acf036b7364d4284a5c03d94cf4e1
+      internalID: 1742427365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_7
+      name: vampire sprites 2_19
       rect:
         serializedVersion: 2
         x: 96
@@ -271,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a775c235809aed4cb4cec9a60d99df1
-      internalID: 61089960
+      spriteID: 5d4d194aaf849ad4f8f40cc0ff9aa9d2
+      internalID: -397649441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_8
+      name: vampire sprites 2_20
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81761089463e7547afc8f9332e15b31
-      internalID: -1493981205
+      spriteID: eece687aa0adcb8429af7dad1a0e19ae
+      internalID: 1813431623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_9
+      name: vampire sprites 2_21
       rect:
         serializedVersion: 2
         x: 32
@@ -313,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3c25b6a3c6422e40931fa639e357b4a
-      internalID: 1180167454
+      spriteID: 2e1826542ad33bb42aa0e6d4ff7d5123
+      internalID: 678178413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_10
+      name: vampire sprites 2_22
       rect:
         serializedVersion: 2
         x: 64
@@ -334,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f135759972054804aa30de0f62821b79
-      internalID: -436312688
+      spriteID: 2fdee707cbb4c1148a3c00198301177f
+      internalID: 905813734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_11
+      name: vampire sprites 2_23
       rect:
         serializedVersion: 2
         x: 96
@@ -355,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acab8f941c1b1d64184594563751b514
-      internalID: 974201629
+      spriteID: 2c6512e40d472e04aa44e45178454975
+      internalID: 953085839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_12
+      name: vampire sprites 2_24
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 614449839673c1f4b900ca11670a47b6
-      internalID: 739187110
+      spriteID: b7c64115a0ae6e246bc1526c4085f8f6
+      internalID: 1899525855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_13
+      name: vampire sprites 2_25
       rect:
         serializedVersion: 2
         x: 32
@@ -397,14 +649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25f9080942e2084ab0d6a9a3a73ceee
-      internalID: -1283224665
+      spriteID: 4a9fff0a58b101e4992533245a85c494
+      internalID: -2098816495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_14
+      name: vampire sprites 2_26
       rect:
         serializedVersion: 2
         x: 64
@@ -418,14 +670,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9024fe4ebc3ba6049a3d0a80c752169d
-      internalID: 290377151
+      spriteID: 641904b4904007b47b4118f54452c805
+      internalID: 1245767352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_15
+      name: vampire sprites 2_27
       rect:
         serializedVersion: 2
         x: 96
@@ -439,14 +691,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f9240815dfa28240ba0a6aac8eb8ff4
-      internalID: -144521832
+      spriteID: 973e73c73fde97c4d86bf4741f8312fd
+      internalID: 1338291654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_16
+      name: vampire sprites 2_28
       rect:
         serializedVersion: 2
         x: 0
@@ -460,14 +712,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9afb15c1eec2ded4fb8af02cbfbd6fd5
-      internalID: -1852065925
+      spriteID: 5f3b5c61450cae542abf3ff3e59997df
+      internalID: 1375668409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_17
+      name: vampire sprites 2_29
       rect:
         serializedVersion: 2
         x: 32
@@ -481,14 +733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7068658575a8d044b87bebf5c8084b7
-      internalID: 417412539
+      spriteID: 405dd2d5dd26c944a9ee8e1c27d38aaa
+      internalID: -1422714767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_18
+      name: vampire sprites 2_30
       rect:
         serializedVersion: 2
         x: 64
@@ -502,14 +754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1c77ab07f2c8fe43a538c4bb726216e
-      internalID: 151341290
+      spriteID: 9bdf3a08e938f8f48be52c21e582bb42
+      internalID: -1083736443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vampire sprites 1_19
+      name: vampire sprites 2_31
       rect:
         serializedVersion: 2
         x: 96
@@ -523,8 +775,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91f136685df02b44e8f0dac3ccce5653
-      internalID: 1112799754
+      spriteID: 8719d0f50755e96459dcba6214b242dc
+      internalID: -1236680712
       vertices: []
       indices: 
       edges: []
@@ -540,26 +792,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vampire sprites 1_0: -1637769346
-      vampire sprites 1_1: -2132709727
-      vampire sprites 1_10: -436312688
-      vampire sprites 1_11: 974201629
-      vampire sprites 1_12: 739187110
-      vampire sprites 1_13: -1283224665
-      vampire sprites 1_14: 290377151
-      vampire sprites 1_15: -144521832
-      vampire sprites 1_16: -1852065925
-      vampire sprites 1_17: 417412539
-      vampire sprites 1_18: 151341290
-      vampire sprites 1_19: 1112799754
-      vampire sprites 1_2: -788083659
-      vampire sprites 1_3: 1075220559
-      vampire sprites 1_4: 1127739902
-      vampire sprites 1_5: -1027817604
-      vampire sprites 1_6: -13876435
-      vampire sprites 1_7: 61089960
-      vampire sprites 1_8: -1493981205
-      vampire sprites 1_9: 1180167454
+      vampire sprites 2_0: -608685022
+      vampire sprites 2_1: -817860623
+      vampire sprites 2_10: 1977838885
+      vampire sprites 2_11: -901292673
+      vampire sprites 2_12: -1166118422
+      vampire sprites 2_13: -1963977882
+      vampire sprites 2_14: -118389822
+      vampire sprites 2_15: 1662120483
+      vampire sprites 2_16: 2144000781
+      vampire sprites 2_17: 2052799552
+      vampire sprites 2_18: 1742427365
+      vampire sprites 2_19: -397649441
+      vampire sprites 2_2: -946402598
+      vampire sprites 2_20: 1813431623
+      vampire sprites 2_21: 678178413
+      vampire sprites 2_22: 905813734
+      vampire sprites 2_23: 953085839
+      vampire sprites 2_24: 1899525855
+      vampire sprites 2_25: -2098816495
+      vampire sprites 2_26: 1245767352
+      vampire sprites 2_27: 1338291654
+      vampire sprites 2_28: 1375668409
+      vampire sprites 2_29: -1422714767
+      vampire sprites 2_3: -927736948
+      vampire sprites 2_30: -1083736443
+      vampire sprites 2_31: -1236680712
+      vampire sprites 2_4: -425280045
+      vampire sprites 2_5: 1339358218
+      vampire sprites 2_6: 93536613
+      vampire sprites 2_7: -1660765134
+      vampire sprites 2_8: 1024126229
+      vampire sprites 2_9: -877653296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
