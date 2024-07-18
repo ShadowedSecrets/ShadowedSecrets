@@ -55,23 +55,10 @@ public class playerMovement : MonoBehaviour
     }
     private void UpdateMovement()
     {
-        animator.SetInteger("IsWalking", 0);
-        if (Input.GetKey(KeyCode.W))
-        {
-            animator.SetInteger("IsWalking", 2);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {  
-            animator.SetInteger("IsWalking", 1);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            animator.SetInteger("IsWalking", 3);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            animator.SetInteger("IsWalking", 4);
-        }
+        animator.SetFloat("Horizontal", moveInput.x);
+        animator.SetFloat("Vertical", moveInput.y);
+        animator.SetFloat("Speed", moveInput.sqrMagnitude);
+
     }
     private void FixedUpdate()
     {

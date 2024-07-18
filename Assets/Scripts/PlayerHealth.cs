@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     private Vector3 checkpoint2Position;
     private int lastCheckpoint = 0;
 
-
+    private Animator animator;
 
     void Start()
     {
@@ -37,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
         checkpoint1Position = new Vector3(18, 8.25f, 0);
         checkpoint2Position = new Vector3(56, 9, 0);
 
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -56,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
+        animator.SetTrigger("Damage");
 
         if (AudioManager.instance != null)
         {
