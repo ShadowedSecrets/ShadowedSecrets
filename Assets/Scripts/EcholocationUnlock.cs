@@ -13,7 +13,7 @@ public class EcholocationUnlock : MonoBehaviour
             {
                 playerAbilitiesScript.UnlockEcholocation();
                 Debug.Log("Echolocation unlocked!");
-                Destroy(gameObject);
+               // Destroy(gameObject);
             }
         }
     }
