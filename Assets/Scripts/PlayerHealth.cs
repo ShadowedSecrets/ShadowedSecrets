@@ -76,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //finding the last checkpoint
         if (other.CompareTag("CheckPoint"))
         {
             lastCheckpointPosition = other.transform.position;

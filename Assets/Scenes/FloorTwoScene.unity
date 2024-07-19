@@ -437,8 +437,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.25635, y: 0.11965001, z: 0}
-    m_Extent: {x: 3.63375, y: 1.04705, z: 0}
+    m_Center: {x: -1.25615, y: 0.118799984, z: 0}
+    m_Extent: {x: 3.63355, y: 1.0464001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -958,7 +958,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348344482}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &348344486
 Camera:
   m_ObjectHideFlags: 0
@@ -1157,8 +1157,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.05310011, y: 4.16685, z: 0}
-    m_Extent: {x: 6.0106, y: 3.30435, z: 0}
+    m_Center: {x: 0.052050114, y: 4.16645, z: 0}
+    m_Extent: {x: 6.01095, y: 3.30415, z: 0}
   m_PointLightInnerAngle: 180
   m_PointLightOuterAngle: 180
   m_PointLightInnerRadius: 0
@@ -1894,8 +1894,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2557001, y: 0.11945003, z: 0}
-    m_Extent: {x: 3.6335, y: 1.04755, z: 0}
+    m_Center: {x: -1.25725, y: 0.11979997, z: 0}
+    m_Extent: {x: 3.63345, y: 1.0466, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2104,8 +2104,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.017100096, y: 5.07555, z: 0}
-    m_Extent: {x: 5.957, y: 6.70765, z: 0}
+    m_Center: {x: 0.017149925, y: 5.07605, z: 0}
+    m_Extent: {x: 5.95775, y: 6.70735, z: 0}
   m_PointLightInnerAngle: 180
   m_PointLightOuterAngle: 180
   m_PointLightInnerRadius: 0
@@ -2232,8 +2232,8 @@ GameObject:
   - component: {fileID: 823683016}
   - component: {fileID: 823683015}
   m_Layer: 0
-  m_Name: CheckPoint2 (1)
-  m_TagString: CheckPoint2.lvl2
+  m_Name: CheckPoint3
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2344,8 +2344,8 @@ Transform:
   m_GameObject: {fileID: 823683014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.27, y: 40.24, z: 0}
-  m_LocalScale: {x: 2.0731332, y: 1.9349161, z: 1}
+  m_LocalPosition: {x: 0.7264, y: 12.48, z: 0}
+  m_LocalScale: {x: 2.77433, y: 1.9349161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2363,7 +2363,7 @@ GameObject:
   - component: {fileID: 875774348}
   m_Layer: 0
   m_Name: CheckPoint2
-  m_TagString: CheckPoint2.lvl2
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2474,8 +2474,8 @@ Transform:
   m_GameObject: {fileID: 875774347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.27, y: 8.13, z: 0}
-  m_LocalScale: {x: 2.0731332, y: 1.9349161, z: 1}
+  m_LocalPosition: {x: 26.15, y: 39.5, z: 0}
+  m_LocalScale: {x: 2.2864587, y: 1.9349161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3964,6 +3964,10 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1907973073}
+    - target: {fileID: 7387378185236885054, guid: 4a5013299a6028449af740acc0505eab, type: 3}
+      propertyPath: PlayerRs
+      value: 
+      objectReference: {fileID: 808663580}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.73
@@ -4125,7 +4129,7 @@ GameObject:
   - component: {fileID: 1768590483}
   m_Layer: 0
   m_Name: CheckPoint1
-  m_TagString: CheckPoint1.lvl2
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4236,7 +4240,7 @@ Transform:
   m_GameObject: {fileID: 1768590482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7669, y: 12.32, z: 0}
+  m_LocalPosition: {x: 26.15, y: 7.15, z: 0}
   m_LocalScale: {x: 2.791584, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4308,8 +4312,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2563499, y: 0.11995, z: 0}
-    m_Extent: {x: 3.6339498, y: 1.04655, z: 0}
+    m_Center: {x: -1.2568, y: 0.12014997, z: 0}
+    m_Extent: {x: 3.6338, y: 1.04695, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4903,8 +4907,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.2565, y: 0.119700015, z: 0}
-    m_Extent: {x: 3.6332, y: 1.0466001, z: 0}
+    m_Center: {x: -1.2562999, y: 0.1196, z: 0}
+    m_Extent: {x: 3.6339998, y: 1.0462999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
