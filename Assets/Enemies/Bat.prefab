@@ -346,12 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990aaac9670fd5419e1da9e129b74d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets:
-  - {fileID: 6129889875199304839}
-  - {fileID: 6411439676966110553}
-  obstacles:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
+  obstacles: []
   currentTarget: {fileID: 0}
 --- !u!114 &7903319319391769235
 MonoBehaviour:
@@ -594,7 +590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7992228221467636692}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
