@@ -21,7 +21,7 @@ public class EnemyBATai : MonoBehaviour
     [SerializeField]
     private float attackDistance = 0.5f;
 
-    //Inputs sent from the Enemy AI to the Enemy controller
+    // Inputs sent from the Enemy AI to the Enemy controller
     public UnityEvent OnAttackPressed;
     public UnityEvent<Vector2> OnMovementInput, OnPointerInput;
 
@@ -30,6 +30,15 @@ public class EnemyBATai : MonoBehaviour
 
     [SerializeField]
     private ContextSolver movementDirectionSolver;
+
+    [SerializeField]
+    private bool isBat;
+
+    [SerializeField]
+    private bool isGhost;
+
+    [SerializeField]
+    private bool isZombie;
 
     bool following = false;
 
@@ -46,19 +55,31 @@ public class EnemyBATai : MonoBehaviour
     private float freezeDuration;
     private Coroutine currentCoroutine;
 
-    //knockback variables 
+    // Knockback variables 
     public float knockbackForce = 10f;
     public float knockbackDuration = 0.2f;
 
-    // sprite renderer 
-    public SpriteRenderer Sprite;
+    // Darting variables
+    [SerializeField]
+    private float dartSpeed = 5f;
+    [SerializeField]
+    private float normalSpeed = 2f;
+    [SerializeField]
+    private float dartDuration = 0.5f;
+    [SerializeField]
+    private float dartCooldown = 2f;
+    private bool isDarting = false;
 
-
-
+    /*// Bobbing variables
+    [SerializeField]
+    private float bobbingAmplitude = 0.5f;
+    [SerializeField]
+    private float bobbingFrequency = 1f;
+   // private Coroutine bobbingCoroutine;*/
 
     private void Start()
     {
-        //Detecting Player and Obstacles around
+        // Detecting Player and Obstacles around
         InvokeRepeating("PerformDetection", 0, detectionDelay);
 
         // Ensure Rigidbody2D is assigned
@@ -67,6 +88,12 @@ public class EnemyBATai : MonoBehaviour
         {
             Debug.LogError("Rigidbody2D component not found on " + gameObject.name);
         }
+
+        /*// Start bobbing movement if enemy is a ghost
+        if (isGhost)
+        {
+            bobbingCoroutine = StartCoroutine(BobbingMovement());
+        }*/
     }
 
     private void PerformDetection()
@@ -87,7 +114,7 @@ public class EnemyBATai : MonoBehaviour
             return; // Skip further updates if frozen
         }
 
-        //Enemy AI movement based on Target availability
+        // Enemy AI movement based on Target availability
         if (aiData.currentTarget != null)
         {
             OnPointerInput?.Invoke(aiData.currentTarget.position);
@@ -103,7 +130,7 @@ public class EnemyBATai : MonoBehaviour
         }
         else
         {
-
+            // Do nothing if no target is available
         }
         OnMovementInput?.Invoke(movementInput);
     }
@@ -122,12 +149,68 @@ public class EnemyBATai : MonoBehaviour
             }
             else
             {
+                if (!isDarting && isBat)
+                {
+                    isDarting = true;
+                    StartCoroutine(DartAtPlayer());
+                    yield return new WaitForSeconds(dartCooldown);
+                    isDarting = false;
+                }
+
                 movementInput = movementDirectionSolver.GetDirectionToMove(steeringBehaviours, aiData);
                 yield return new WaitForSeconds(aiUpdateDelay);
             }
         }
         following = false;
     }
+
+    private IEnumerator DartAtPlayer()
+    {
+        float elapsedTime = 0f;
+        Vector2 directionToPlayer = (aiData.currentTarget.position - transform.position).normalized;
+
+        while (elapsedTime < dartDuration)
+        {
+            movementInput = directionToPlayer * dartSpeed;
+            OnMovementInput?.Invoke(movementInput);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        movementInput = directionToPlayer * normalSpeed;
+        OnMovementInput?.Invoke(movementInput);
+    }
+
+    // Coroutine to handle bobbing movement
+   /* private IEnumerator BobbingMovement()
+    {
+        float elapsedTime = 0f;
+        
+        while (true)
+        {
+            if (!isFrozen && aiData.currentTarget != null)
+            {
+
+                // Calculate bobbing ofest using a sine wave
+                float bobbingOffset = Mathf.Sin(elapsedTime * bobbingFrequency) * bobbingAmplitude;
+
+                // update the base movement input towards the player 
+                Vector2 directionToPlayer = (aiData.currentTarget.position - transform.position).normalized;
+                Vector2 baseMovementInput = directionToPlayer * normalSpeed;
+
+                // combine base movement with bibbing effect 
+                Vector2 combinedMovement = baseMovementInput;
+                combinedMovement.y += bobbingOffset;
+
+                //move ghost enemy 
+                rb.MovePosition(rb.position + combinedMovement * Time.deltaTime); 
+                elapsedTime += Time.deltaTime;
+            }
+           
+            yield return null;
+        }
+        
+    }*/
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -143,8 +226,7 @@ public class EnemyBATai : MonoBehaviour
         if (other.gameObject.CompareTag("Projectile"))
         {
             TakeDamage(1, other);
-            
-                   
+
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlayEnemyHitSound();
@@ -165,7 +247,6 @@ public class EnemyBATai : MonoBehaviour
         {
             ApplyKnockBack(0.3f);
         }
-        
     }
 
     private void Die()
@@ -221,7 +302,6 @@ public class EnemyBATai : MonoBehaviour
             StartCoroutine(FreezeEnemy());
         }
     }
-    
 
     private IEnumerator FreezeEnemy()
     {
@@ -240,9 +320,6 @@ public class EnemyBATai : MonoBehaviour
 
     public void ApplyKnockBack(float duration)
     {
-        //Vector2 difference = transform.position - other.transform.position;
-        //transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-
         freezeDuration = duration;
         if (currentCoroutine != null)
         {
@@ -250,25 +327,17 @@ public class EnemyBATai : MonoBehaviour
         }
         StartCoroutine(EnemyStun());
     }
+
     public IEnumerator EnemyStun()
     {
         movementInput = Vector2.zero;
         OnMovementInput?.Invoke(movementInput);
         yield return new WaitForSeconds(freezeDuration);
+        isFrozen = false;
 
         if (aiData.currentTarget != null)
         {
             currentCoroutine = StartCoroutine(ChaseAndAttack());
-            
         }
-        
     }
-
-
-
-
 }
-
-
-
-

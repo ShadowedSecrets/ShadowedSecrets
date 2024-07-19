@@ -346,8 +346,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7990aaac9670fd5419e1da9e129b74d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
-  obstacles: []
+  targets:
+  - {fileID: 6129889875199304839}
+  - {fileID: 6411439676966110553}
+  obstacles:
+  - {fileID: 0}
+  - {fileID: 0}
   currentTarget: {fileID: 0}
 --- !u!114 &7903319319391769235
 MonoBehaviour:
@@ -407,6 +411,9 @@ MonoBehaviour:
         m_CallState: 2
   movementInput: {x: 0, y: 0}
   movementDirectionSolver: {fileID: 6189478849556502687}
+  isBat: 1
+  isGhost: 0
+  isZombie: 0
   damage: 1
   maxHealth: 3
   currentHealth: 1
@@ -415,7 +422,10 @@ MonoBehaviour:
     dropChance: 10
   knockbackForce: 10
   knockbackDuration: 0.2
-  Sprite: {fileID: 0}
+  dartSpeed: 2.2
+  normalSpeed: 2
+  dartDuration: 0.3
+  dartCooldown: 1
 --- !u!114 &1655630141790354207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8f530caefc1ac4a946008bddde760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4
+  maxSpeed: 2.5
   acceleration: 50
   deceleration: 100
   currentSpeed: 0
