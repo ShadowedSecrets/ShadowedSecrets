@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 7903319319391769235}
   - component: {fileID: 1655630141790354207}
   - component: {fileID: 8239389851391384745}
+  - component: {fileID: 2962299645643026727}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Enemy
@@ -293,7 +294,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -344101672, guid: 3c8f61e064357a24582bec9d7479ca8f, type: 3}
+  m_Sprite: {fileID: 1603354629, guid: 9c3699f578e8f85439af078b5bc44ed6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -477,6 +478,27 @@ MonoBehaviour:
   deceleration: 100
   currentSpeed: 0
   idleTime: 0.5
+--- !u!95 &2962299645643026727
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110564397164779268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9778b10222f87fd46809c8249df16f6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4161737551595661707
 GameObject:
   m_ObjectHideFlags: 0

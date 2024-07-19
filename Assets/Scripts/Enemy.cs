@@ -19,8 +19,10 @@ public class Enemy : MonoBehaviour
     private bool isDead = false;
     public List<LootItem> lootTable = new List<LootItem>();
 
+    private Animator animator;
+
     //private Pathfinding pathfinding;
-   // private List<Node> path;
+    // private List<Node> path;
     //private int pathIndex = 0;
 
     private void Start()
@@ -32,6 +34,8 @@ public class Enemy : MonoBehaviour
         originalSpeed = speed;
         currentHealth = maxHealth;
         //pathfinding = FindObjectOfType<Pathfinding>();
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -118,6 +122,8 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         if (isDead) return;
+
+        animator.SetBool("IsDead", true);
 
         Debug.Log("Enemy died");
         isDead = true;

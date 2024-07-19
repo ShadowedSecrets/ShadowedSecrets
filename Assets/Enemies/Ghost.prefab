@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 1655630141790354207}
   - component: {fileID: 8239389851391384745}
   - component: {fileID: 7696296836096485423}
+  - component: {fileID: 184045914379813980}
   m_Layer: 7
   m_Name: Ghost
   m_TagString: Enemy
@@ -294,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1647028826, guid: 3c8f61e064357a24582bec9d7479ca8f, type: 3}
+  m_Sprite: {fileID: -726890496, guid: 9c3699f578e8f85439af078b5bc44ed6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -493,6 +494,27 @@ MonoBehaviour:
   collsionParticleSystem: {fileID: 0}
   sR: {fileID: 5125712765601986701}
   once: 1
+--- !u!95 &184045914379813980
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110564397164779268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f36921a0c019e949af19c94c3fb41a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4161737551595661707
 GameObject:
   m_ObjectHideFlags: 0
