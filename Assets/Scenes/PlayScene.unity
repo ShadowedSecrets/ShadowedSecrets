@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 411735689}
   m_Layer: 0
   m_Name: CheckPoint3
-  m_TagString: CheckPoint3
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -984,7 +984,7 @@ Transform:
   m_GameObject: {fileID: 411735686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70.22875, y: 8.323093, z: -0.80069613}
+  m_LocalPosition: {x: 70.25, y: 8.25, z: 0}
   m_LocalScale: {x: 1.8795816, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1163,8 +1163,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0042999983, y: 0.06939995, z: 0}
-    m_Extent: {x: 1.4957, y: 1.5675, z: 0}
+    m_Center: {x: -0.004000008, y: 0.06889999, z: 0}
+    m_Extent: {x: 1.4967, y: 1.5674, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1582,8 +1582,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09130001, y: 0.17855, z: 0}
-    m_Extent: {x: 3.8172, y: 1.08145, z: 0}
+    m_Center: {x: -0.090849996, y: 0.17915002, z: 0}
+    m_Extent: {x: 3.8182502, y: 1.08175, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -23448,7 +23448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9
+      value: -0.54
       objectReference: {fileID: 0}
     - target: {fileID: 8480207943685613622, guid: 4a5013299a6028449af740acc0505eab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23605,7 +23605,7 @@ GameObject:
   - component: {fileID: 1189991517}
   m_Layer: 0
   m_Name: CheckPoint1
-  m_TagString: CheckPoint1
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24711,8 +24711,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5208999, y: 0.110000014, z: 0}
-    m_Extent: {x: 4.2725, y: 1.1021, z: 0}
+    m_Center: {x: -0.5205499, y: 0.10925001, z: 0}
+    m_Extent: {x: 4.27285, y: 1.1019499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24919,8 +24919,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.52135, y: 0.11004999, z: 0}
-    m_Extent: {x: 4.2733502, y: 1.10235, z: 0}
+    m_Center: {x: -0.52030015, y: 0.109699994, z: 0}
+    m_Extent: {x: 4.2727003, y: 1.1029, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25133,7 +25133,7 @@ GameObject:
   - component: {fileID: 1499003999}
   m_Layer: 0
   m_Name: CheckPoint2
-  m_TagString: CheckPoint2
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25775,8 +25775,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0043500066, y: 0.06984997, z: 0}
-    m_Extent: {x: 1.49595, y: 1.56785, z: 0}
+    m_Center: {x: -0.00364995, y: 0.069000006, z: 0}
+    m_Extent: {x: 1.49605, y: 1.5685, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
