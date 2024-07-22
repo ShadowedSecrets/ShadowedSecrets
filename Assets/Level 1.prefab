@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5232540675732223900}
   - component: {fileID: 1955744547816033940}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2254056730275779653}
   - component: {fileID: 571260148929465186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8458905561680045636}
   - component: {fileID: 9014578853841830831}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2587153942335807921}
   - component: {fileID: 2020418985504865663}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2260414970104262244}
   - component: {fileID: 9153452756259224976}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8287323366953820142}
   - component: {fileID: 6405988702166488311}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7459475915577234886}
   - component: {fileID: 7676163853125739104}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkeletonSpawner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 9020971330781630573}
   - component: {fileID: 3543944391987504076}
   - component: {fileID: 2738329363344365337}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9088915255280130959}
   - component: {fileID: 2879762207606721837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4893530055157238477}
   - component: {fileID: 2921596130583910317}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 6289674229579334521}
   - component: {fileID: 8291812730422335865}
   - component: {fileID: 647648595026343962}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3250,7 +3250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5056727187406216043}
   - component: {fileID: 8554375251939398553}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7057559257240815576}
   - component: {fileID: 847018444828497507}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3414,7 +3414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7955008239353558182}
   - component: {fileID: 7356706338066881954}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3500,7 +3500,7 @@ GameObject:
   - component: {fileID: 7624780097973327134}
   - component: {fileID: 4021067075707416142}
   - component: {fileID: 906022310265687567}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4671,7 +4671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2555674887227461336}
   - component: {fileID: 6791794131297495530}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4753,7 +4753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2174805817804370716}
   - component: {fileID: 2616714602491871908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4835,7 +4835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141901580059917361}
   - component: {fileID: 7320758465991374912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4917,7 +4917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8026206621153241444}
   - component: {fileID: 7088815268585725634}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkeletonSpawner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -4967,7 +4967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4339521203385650086}
   - component: {fileID: 2607878475623997540}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5053,7 +5053,7 @@ GameObject:
   - component: {fileID: 4885224532120595897}
   - component: {fileID: 2080906530977727312}
   - component: {fileID: 6921773551734673986}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5766,7 +5766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3017554259919898709}
   - component: {fileID: 5210043622326296871}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5848,7 +5848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111761966622972835}
   - component: {fileID: 241332984945027664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5900,7 +5900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5015541911435411296}
   - component: {fileID: 4248896084341908665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5982,7 +5982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2620044838671022766}
   - component: {fileID: 2552079524186416670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6064,7 +6064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7911784310640476101}
   - component: {fileID: 7640721629665426527}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6146,7 +6146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8771592397569217342}
   - component: {fileID: 8410651832714634392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkeletonSpawner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -6196,7 +6196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3670905405214484312}
   - component: {fileID: 5054927073200600849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6279,7 +6279,7 @@ GameObject:
   - component: {fileID: 414491175283519951}
   - component: {fileID: 2396835900972394128}
   - component: {fileID: 1121698077406091969}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6912,7 +6912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2674676833931008334}
   - component: {fileID: 2235810645712982504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6994,7 +6994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243695396629511969}
   - component: {fileID: 5533325043323451892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7076,7 +7076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3088657386944342577}
   - component: {fileID: 3170948485319056234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7158,7 +7158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364319272499199531}
   - component: {fileID: 8758991558538537615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7240,7 +7240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8820665284076188710}
   - component: {fileID: 7283840953369391611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7305,7 +7305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132494052219699640}
   - component: {fileID: 3879373550473075993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7387,7 +7387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3367122384213047175}
   - component: {fileID: 4286823716183995019}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7469,7 +7469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6352508368850788393}
   - component: {fileID: 5135622891650060837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7551,7 +7551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2774635751395884145}
   - component: {fileID: 6789472799848020326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7633,7 +7633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2029869173993550017}
   - component: {fileID: 4020890079396540561}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7715,7 +7715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8165206150722768246}
   - component: {fileID: 4445362974868952042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7797,7 +7797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5634449606419709126}
   - component: {fileID: 3078216658839273943}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7879,7 +7879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3523509519402558665}
   - component: {fileID: 5706791561576178854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7965,7 +7965,7 @@ GameObject:
   - component: {fileID: 861640310755252325}
   - component: {fileID: 6172036699686028078}
   - component: {fileID: 2509483429671907456}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -9490,7 +9490,7 @@ GameObject:
   - component: {fileID: 8431121892890122919}
   - component: {fileID: 6704316473336136389}
   - component: {fileID: 6524076136918286920}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11295,7 +11295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160564132194684154}
   - component: {fileID: 3542413231922404824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11363,7 +11363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6679381069535377380}
   - component: {fileID: 4045325404372999573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11445,7 +11445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406590665837649146}
   - component: {fileID: 2829774206778544116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11527,7 +11527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3461800528230645461}
   - component: {fileID: 5623151198101166110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11609,7 +11609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5258013856898964685}
   - component: {fileID: 484694246077393916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11691,7 +11691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4746608176313026116}
   - component: {fileID: 8695890797474356976}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZombieSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -11741,7 +11741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433271760363042162}
   - component: {fileID: 9106172571261682598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11797,7 +11797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9157378279436344936}
   - component: {fileID: 3561531602190702835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11855,7 +11855,7 @@ GameObject:
   - component: {fileID: 6098055407298956817}
   - component: {fileID: 6127971611442280961}
   - component: {fileID: 4965339189207525349}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room6Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11952,7 +11952,7 @@ GameObject:
   - component: {fileID: 7935586962604335216}
   - component: {fileID: 4476422348724301604}
   - component: {fileID: 9138074828520271229}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12771,7 +12771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8932551595458106555}
   - component: {fileID: 1389692803249195938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12853,7 +12853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2795719703011033694}
   - component: {fileID: 5767144005476760230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12936,7 +12936,7 @@ GameObject:
   - component: {fileID: 7404394129346084390}
   - component: {fileID: 7428349861260429297}
   - component: {fileID: 1180833551523933695}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15964,7 +15964,7 @@ GameObject:
   - component: {fileID: 6423925241995892756}
   - component: {fileID: 313046439522698421}
   - component: {fileID: 7661134162526597512}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AboveGround1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16343,7 +16343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6014289232240388676}
   - component: {fileID: 9178670234724099210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16425,7 +16425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284412787282171948}
   - component: {fileID: 7635438012885416372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16507,7 +16507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1157150807875473468}
   - component: {fileID: 1415964563009651270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16589,7 +16589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3746153580927049237}
   - component: {fileID: 8118157278211395289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16671,7 +16671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8835327877272331126}
   - component: {fileID: 6680821066653447753}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16753,7 +16753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4979534977518220446}
   - component: {fileID: 9112965641197714745}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16835,7 +16835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6446019678498719291}
   - component: {fileID: 3732376686427603346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16917,7 +16917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507679611509426917}
   - component: {fileID: 3351543459492661841}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17000,7 +17000,7 @@ GameObject:
   - component: {fileID: 1558401369680611390}
   - component: {fileID: 6856942440324313843}
   - component: {fileID: 8145786755415853442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17359,7 +17359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566379594151255197}
   - component: {fileID: 3166391476618753673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17441,7 +17441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8948816095677872870}
   - component: {fileID: 167403515614571154}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17523,7 +17523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2478483026403334623}
   - component: {fileID: 7276383678701219282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17605,7 +17605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8329236188543508588}
   - component: {fileID: 4170797802670195715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17687,7 +17687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350473728632642869}
   - component: {fileID: 7911386157167724674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17769,7 +17769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3215988919452457711}
   - component: {fileID: 2522144081036420177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17851,7 +17851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4272302591487866188}
   - component: {fileID: 6845494107458513590}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17933,7 +17933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7004195384936703411}
   - component: {fileID: 1962040146514519525}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18015,7 +18015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5760102699660752686}
   - component: {fileID: 5048464312028045744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18097,7 +18097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7587531945144910259}
   - component: {fileID: 2620716813045741698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18180,7 +18180,7 @@ GameObject:
   - component: {fileID: 6834381573015511645}
   - component: {fileID: 3567920624728502932}
   - component: {fileID: 1564803570714220079}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundHallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21939,7 +21939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530788764083845221}
   - component: {fileID: 4423877809694215382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22025,7 +22025,7 @@ GameObject:
   - component: {fileID: 1878902694385277476}
   - component: {fileID: 7644861157599509990}
   - component: {fileID: 2235786611622138361}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Colliable5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22946,7 +22946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154372335178074889}
   - component: {fileID: 4746882725596747709}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23029,7 +23029,7 @@ GameObject:
   - component: {fileID: 7811174900752753369}
   - component: {fileID: 1113004227956329200}
   - component: {fileID: 1339084638366452867}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25946,7 +25946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7472022132478396295}
   - component: {fileID: 1039885864061961766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26028,7 +26028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6975318706244478037}
   - component: {fileID: 6335735483065743291}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26110,7 +26110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3004632954420408638}
   - component: {fileID: 2643839792876996248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkeletonSpawner (4)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -26160,7 +26160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7289879393287020137}
   - component: {fileID: 2597810277521770726}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26242,7 +26242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8926314198645628589}
   - component: {fileID: 8208358640888946991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26324,7 +26324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6090324710681387371}
   - component: {fileID: 4328081136884934748}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26405,7 +26405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8865697903802689765}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26446,7 +26446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4885973635996328564}
   - component: {fileID: 8843266373578765024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26528,7 +26528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4119820072607362016}
   - component: {fileID: 8240044381410384077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26584,7 +26584,7 @@ GameObject:
   - component: {fileID: 9086642290547829011}
   - component: {fileID: 3899259407513932024}
   - component: {fileID: 3506654937587646113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28043,7 +28043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7052878122605357035}
   - component: {fileID: 2595356672759629779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28125,7 +28125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5016370269364542104}
   - component: {fileID: 2546952718527675422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28207,7 +28207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520461755298673952}
   - component: {fileID: 6274833506453270978}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28273,7 +28273,7 @@ GameObject:
   - component: {fileID: 285683545740836392}
   - component: {fileID: 8141955929457131731}
   - component: {fileID: 2049795158977316686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29824,7 +29824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7118512960360786732}
   - component: {fileID: 7972968159617716372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29906,7 +29906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2663064406916234260}
   - component: {fileID: 4202190185977542436}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29988,7 +29988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82666515947091828}
   - component: {fileID: 8993836572832873862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30070,7 +30070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7995086471100257109}
   - component: {fileID: 6164058593291433481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30152,7 +30152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1993199547678132719}
   - component: {fileID: 8393468693164643961}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpiritSpawner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -30203,7 +30203,7 @@ GameObject:
   - component: {fileID: 4066105247768800190}
   - component: {fileID: 4878613780065996367}
   - component: {fileID: 6357356448025644835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30584,7 +30584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6038927280901914629}
   - component: {fileID: 338168549276662406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30666,7 +30666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542417836543597736}
   - component: {fileID: 8651952919156789282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30748,7 +30748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9113479078214911526}
   - component: {fileID: 5846373492373361019}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30834,7 +30834,7 @@ GameObject:
   - component: {fileID: 1537648189240371124}
   - component: {fileID: 6649490648341235992}
   - component: {fileID: 548343349319867693}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -32187,7 +32187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2884697859312862735}
   - component: {fileID: 3621142088974594004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32269,7 +32269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5979232306996382971}
   - component: {fileID: 9078650287391184122}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32351,7 +32351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2305139789823266041}
   - component: {fileID: 2175186421387381852}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32433,7 +32433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7001376431566092708}
   - component: {fileID: 9088712544085482945}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32519,7 +32519,7 @@ GameObject:
   - component: {fileID: 8187779858379922174}
   - component: {fileID: 71472877279371412}
   - component: {fileID: 1176124200763132544}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Collidable8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -34404,7 +34404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7521127446403814338}
   - component: {fileID: 152967959865970217}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34487,7 +34487,7 @@ GameObject:
   - component: {fileID: 4656543486120431407}
   - component: {fileID: 4402655984412925458}
   - component: {fileID: 1830200341294116599}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34834,7 +34834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8402759175044846727}
   - component: {fileID: 655045749256401068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34916,7 +34916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4571696379426991759}
   - component: {fileID: 1708398759872485687}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34998,7 +34998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258088324568072875}
   - component: {fileID: 1199986488308874995}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35081,7 +35081,7 @@ GameObject:
   - component: {fileID: 3845292249184982240}
   - component: {fileID: 4912771164232315395}
   - component: {fileID: 1630217187819514626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AboveGround3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35634,7 +35634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6848052252906576365}
   - component: {fileID: 1250923745189855501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35716,7 +35716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4204786778233263878}
   - component: {fileID: 2833876062777866884}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35798,7 +35798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3117644015212253775}
   - component: {fileID: 3511630973637425057}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35880,7 +35880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7424558050690326142}
   - component: {fileID: 8714942551331117139}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GlobalLight2d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35962,7 +35962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 26276709434166297}
   - component: {fileID: 5515579513739738263}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36044,7 +36044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8335419589850863702}
   - component: {fileID: 322063003031760715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36126,7 +36126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3836705748228938863}
   - component: {fileID: 489678541968932347}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36208,7 +36208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5931304179492602217}
   - component: {fileID: 5772108788024331274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36290,7 +36290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6943994778164924279}
   - component: {fileID: 789446058024535916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36372,7 +36372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6954195251497667211}
   - component: {fileID: 3240162389923163532}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36454,7 +36454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837785817460964330}
   - component: {fileID: 2089416467880391451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36536,7 +36536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5564315058229799010}
   - component: {fileID: 1447857262176748914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36618,7 +36618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7723853855185206189}
   - component: {fileID: 5928552557341181163}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36700,7 +36700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7875461463580886844}
   - component: {fileID: 440024536484522172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36782,7 +36782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4293019560580560522}
   - component: {fileID: 1013551659962078144}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36864,7 +36864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260061909786293360}
   - component: {fileID: 8536389825808044948}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'SpotLight2D1 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36946,7 +36946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4524940723167862587}
   - component: {fileID: 7420780120335074549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37028,7 +37028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 294382479316308159}
   - component: {fileID: 4660867517688795694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37111,7 +37111,7 @@ GameObject:
   - component: {fileID: 6749915275962008680}
   - component: {fileID: 9094371386116736509}
   - component: {fileID: 5567419705738358525}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AboveGround2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37412,7 +37412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7315941551786279298}
   - component: {fileID: 6466614932818099545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37494,7 +37494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053897224019221603}
   - component: {fileID: 1162352501850196073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37577,7 +37577,7 @@ GameObject:
   - component: {fileID: 977603431739934453}
   - component: {fileID: 4193110390201426632}
   - component: {fileID: 812932817767778789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42684,7 +42684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5968034367506778261}
   - component: {fileID: 1308056270181614610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42766,7 +42766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8794163249145770805}
   - component: {fileID: 8347392711697658494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42848,7 +42848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7316550426584165129}
   - component: {fileID: 3577766064823462110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42930,7 +42930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683470462919502990}
   - component: {fileID: 9004558936795721271}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43013,7 +43013,7 @@ GameObject:
   - component: {fileID: 4278460486291054898}
   - component: {fileID: 6783834557138269091}
   - component: {fileID: 6579112155769318415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4874263296720391079}
   - component: {fileID: 6012810235814126254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7451220823813398734}
   - component: {fileID: 2004423026361773420}
   - component: {fileID: 5064801771992440887}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CathFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8713623111747188981}
   - component: {fileID: 8815159007284283471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cathedral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3655237604807547362}
   - component: {fileID: 2481399582640741011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 5035898314689552731}
   - component: {fileID: 8595663597854114775}
   - component: {fileID: 4841729600473113519}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FalseDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990491193504518643}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 2946019946630059616}
   - component: {fileID: 4382348908877060178}
   - component: {fileID: 1244135519181746295}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EchoPressure2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2574199285717739430}
   - component: {fileID: 6938534490738863993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 7467409995763425366}
   - component: {fileID: 1756818241569760357}
   - component: {fileID: 2050576308686365441}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4481,7 +4481,7 @@ GameObject:
   - component: {fileID: 5589449799382323963}
   - component: {fileID: 7009677344656691460}
   - component: {fileID: 3907945060262169445}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EchoCollide
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6130,7 +6130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019426563828987868}
   - component: {fileID: 6666781471831447703}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6212,7 +6212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8644159870203685369}
   - component: {fileID: 7908865507322624427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6294,7 +6294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8469505995722988793}
   - component: {fileID: 3903882610457316320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6376,7 +6376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8950963489235707054}
   - component: {fileID: 8448813534715487721}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6458,7 +6458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248557897189742717}
   - component: {fileID: 3021763597590451405}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CrystalRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6512,7 +6512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3337930096387968072}
   - component: {fileID: 435188833348886990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CrystalManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6569,7 +6569,7 @@ GameObject:
   - component: {fileID: 2611578278083511355}
   - component: {fileID: 3082669223766713410}
   - component: {fileID: 6902794908081019451}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CathCollide
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7762,7 +7762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6634451884079155653}
   - component: {fileID: 3765095230084845314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7844,7 +7844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3787221447487272627}
   - component: {fileID: 2983097600671202539}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dungeon_Tileset_59 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7928,7 +7928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6356538057464791078}
   - component: {fileID: 8988005638024714261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8011,7 +8011,7 @@ GameObject:
   - component: {fileID: 4878400403799460864}
   - component: {fileID: 2083702715569339164}
   - component: {fileID: 3175076431165394047}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CrystalAbove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8451,7 +8451,7 @@ GameObject:
   - component: {fileID: 2266291883169566550}
   - component: {fileID: 2193412948872293383}
   - component: {fileID: 3121624899424817549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EchoPressure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8544,7 +8544,7 @@ GameObject:
   - component: {fileID: 6922742655576853764}
   - component: {fileID: 7806616352961503925}
   - component: {fileID: 5534427874510453284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ClueSheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8713,7 +8713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3359520578913714166}
   - component: {fileID: 8195836579642152515}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: FOG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8797,7 +8797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4762924146729508192}
   - component: {fileID: 958830322141639701}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8881,7 +8881,7 @@ GameObject:
   - component: {fileID: 6685173935052658511}
   - component: {fileID: 9099280395159459726}
   - component: {fileID: 6420927312279272157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: YellowCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9024,7 +9024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2557770712139451898}
   - component: {fileID: 7182936764717974062}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9108,7 +9108,7 @@ GameObject:
   - component: {fileID: 2516755596459525999}
   - component: {fileID: 676315694275748103}
   - component: {fileID: 2416525947481312234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BlueCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9251,7 +9251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4029211601672825616}
   - component: {fileID: 5682485500741871368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9337,7 +9337,7 @@ GameObject:
   - component: {fileID: 8219526269051549270}
   - component: {fileID: 8104469895845867439}
   - component: {fileID: 3219703507748274445}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CrystalCollide
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10541,7 +10541,7 @@ GameObject:
   - component: {fileID: 715998930912643628}
   - component: {fileID: 3784070228432724060}
   - component: {fileID: 2175060882240404826}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AboveGround1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11480,7 +11480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2179821272813023942}
   - component: {fileID: 2088095966910411065}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11562,7 +11562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7859296423039318361}
   - component: {fileID: 7368604259462951571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11644,7 +11644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3562838726410026386}
   - component: {fileID: 4314112142151438548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dungeon_Tileset_38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11728,7 +11728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3165420403531945432}
   - component: {fileID: 5883441407138925115}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EchoRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11780,7 +11780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7335497291445599997}
   - component: {fileID: 7133960393822446213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11862,7 +11862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4408604311725491821}
   - component: {fileID: 5804622947651149306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkeletonSpawner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -11915,7 +11915,7 @@ GameObject:
   - component: {fileID: 2656079959678402507}
   - component: {fileID: 1080058503491496034}
   - component: {fileID: 5408763875507171547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Summoning Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12032,7 +12032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5315594119307539948}
   - component: {fileID: 3972758388186049695}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12114,7 +12114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4560912150074057346}
   - component: {fileID: 6375233918242043840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12198,7 +12198,7 @@ GameObject:
   - component: {fileID: 5983413635522375069}
   - component: {fileID: 5920519701987448917}
   - component: {fileID: 7197118733613490815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12341,7 +12341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3557244238687233762}
   - component: {fileID: 3837633629325859157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12424,7 +12424,7 @@ GameObject:
   - component: {fileID: 5637238377570811665}
   - component: {fileID: 1435139167454970081}
   - component: {fileID: 196623897395203349}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CathAbove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12683,7 +12683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 471920682688030855}
   - component: {fileID: 2769525584390985283}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12766,7 +12766,7 @@ GameObject:
   - component: {fileID: 1608683812270092459}
   - component: {fileID: 4375307872228661047}
   - component: {fileID: 2089393409267740128}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EchoAbove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13675,7 +13675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3006283923426682591}
   - component: {fileID: 4663402584882084494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dungeon_Tileset_38 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13759,7 +13759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4961938007436220150}
   - component: {fileID: 2981330178296472032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13841,7 +13841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2879033283118977600}
   - component: {fileID: 1692745234291259139}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Halls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13909,7 +13909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4073558460761735372}
   - component: {fileID: 2425853653260020012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GlobalLight2d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13992,7 +13992,7 @@ GameObject:
   - component: {fileID: 5647866005902439573}
   - component: {fileID: 3441788279880658692}
   - component: {fileID: 4775846493784590036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundRoom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26518,7 +26518,7 @@ GameObject:
   - component: {fileID: 4441454625595647022}
   - component: {fileID: 8763426732412520345}
   - component: {fileID: 2062902988157937016}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EchoFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26725,7 +26725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6252953287155909819}
   - component: {fileID: 3995009712455793771}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpotLight2D1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26808,7 +26808,7 @@ GameObject:
   - component: {fileID: 8833376380003476775}
   - component: {fileID: 2636889784021871237}
   - component: {fileID: 6993409467497583104}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CrystalFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26995,7 +26995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7449177867885719637}
   - component: {fileID: 8191644213254177913}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dungeon_Tileset_59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27121,6 +27121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpiritSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 5685120788364607325, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7163686487422606848, guid: 771f3b3d7df84104d9acdcce509e74e5, type: 3}
       propertyPath: summoningCircle
       value: 
@@ -27160,6 +27164,10 @@ PrefabInstance:
     - target: {fileID: 5102228589503302512, guid: caa87181b3055a24da4570d83e5d7d2e, type: 3}
       propertyPath: m_Name
       value: SummingCircle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5102228589503302512, guid: caa87181b3055a24da4570d83e5d7d2e, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9096211803239671610, guid: caa87181b3055a24da4570d83e5d7d2e, type: 3}
       propertyPath: m_LocalPosition.x
