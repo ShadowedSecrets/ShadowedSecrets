@@ -1624,14 +1624,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 1966548756805488089, guid: e488412696da36a43bfe1dc8f6985b0e, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976144407070513257, guid: e488412696da36a43bfe1dc8f6985b0e, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6650852847149276755, guid: e488412696da36a43bfe1dc8f6985b0e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -1676,14 +1668,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss/MiniGameRoom1
       objectReference: {fileID: 0}
-    - target: {fileID: 7554700910819067297, guid: e488412696da36a43bfe1dc8f6985b0e, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746655075646557642, guid: e488412696da36a43bfe1dc8f6985b0e, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1705,14 +1689,6 @@ PrefabInstance:
     - target: {fileID: 298218180524557857, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
       propertyPath: m_Name
       value: checkPointRoom3
-      objectReference: {fileID: 0}
-    - target: {fileID: 298218180524557857, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 341407151243273316, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3504460121763065607, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1754,14 +1730,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5719184772160381764, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6794208990976315304, guid: 4f983b6a4b76bf240b6e206ed1399401, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1775,18 +1743,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 117322742868750635, guid: 02ae77ba522af334ca1da5e0da62705b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4708249284881730463, guid: 02ae77ba522af334ca1da5e0da62705b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6145398497810262110, guid: 02ae77ba522af334ca1da5e0da62705b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7281550766574098654, guid: 02ae77ba522af334ca1da5e0da62705b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -1831,10 +1787,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightRoom1
       objectReference: {fileID: 0}
-    - target: {fileID: 8947384725077231789, guid: 02ae77ba522af334ca1da5e0da62705b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1848,14 +1800,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 738217380635666386, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851230617274628261, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5052146900164910673, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -1896,17 +1840,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5323993648759453311, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7978351767471603684, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
       propertyPath: m_Name
       value: CheckPointRoom1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7978351767471603684, guid: 0f540cdc08bc1a741afc4d221c93b54b, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1926,17 +1862,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 412885906343458657, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1720606074284204231, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
       propertyPath: m_Name
       value: Room1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1720606074284204231, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3698771750756320337, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1977,14 +1905,6 @@ PrefabInstance:
     - target: {fileID: 3698771750756320337, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771183416584372750, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3986140195034384160, guid: 67ea96c181d498a419c8ac3951693781, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1999,17 +1919,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 48265440050494231, guid: 819649c63392ab74880efa94330d7d61, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 189276544684733681, guid: 819649c63392ab74880efa94330d7d61, type: 3}
       propertyPath: m_Name
       value: FinalRoom
-      objectReference: {fileID: 0}
-    - target: {fileID: 189276544684733681, guid: 819649c63392ab74880efa94330d7d61, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8524636922282047683, guid: 819649c63392ab74880efa94330d7d61, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2050,14 +1962,6 @@ PrefabInstance:
     - target: {fileID: 8524636922282047683, guid: 819649c63392ab74880efa94330d7d61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9056957957859442525, guid: 819649c63392ab74880efa94330d7d61, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117118549344603622, guid: 819649c63392ab74880efa94330d7d61, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2112,25 +2016,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2591389980693938066, guid: 2e240baab2ebb944f8f7d883efc79030, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2613256737343621068, guid: 2e240baab2ebb944f8f7d883efc79030, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5066577177772467682, guid: 2e240baab2ebb944f8f7d883efc79030, type: 3}
       propertyPath: m_Name
       value: LightRoom2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066577177772467682, guid: 2e240baab2ebb944f8f7d883efc79030, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8227074721213265876, guid: 2e240baab2ebb944f8f7d883efc79030, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2150,17 +2038,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 1611795539271037415, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3027797750328168102, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
       propertyPath: m_Name
       value: Hallway2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3027797750328168102, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5825577077982682861, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2201,14 +2081,6 @@ PrefabInstance:
     - target: {fileID: 5825577077982682861, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6117682686917922738, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9069883038695373937, guid: 68cf0ca670ecd9049a4579a84ae73fff, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2263,25 +2135,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2694713414240496071, guid: 344fecadb18eaea4eb55b0aea7a08b87, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4642235193026239510, guid: 344fecadb18eaea4eb55b0aea7a08b87, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149561346892990817, guid: 344fecadb18eaea4eb55b0aea7a08b87, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6724169107540663638, guid: 344fecadb18eaea4eb55b0aea7a08b87, type: 3}
       propertyPath: m_Name
       value: CheckPointRoom4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724169107540663638, guid: 344fecadb18eaea4eb55b0aea7a08b87, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2296,17 +2152,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 2941924858220421748, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7068681277286933975, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
       propertyPath: m_Name
       value: CheckPointRoom2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7068681277286933975, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8117058152511606624, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2347,14 +2195,6 @@ PrefabInstance:
     - target: {fileID: 8117058152511606624, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8978198887384953629, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222952974248893901, guid: 0377f8fdbc0abc040b0d00363adb84c3, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2471,25 +2311,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6005776968896175443, guid: 8e536f48d9665d9448a59caa69e28369, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7560567014554377052, guid: 8e536f48d9665d9448a59caa69e28369, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7925294653493631929, guid: 8e536f48d9665d9448a59caa69e28369, type: 3}
       propertyPath: m_Name
       value: Room4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925294653493631929, guid: 8e536f48d9665d9448a59caa69e28369, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8422182363286835502, guid: 8e536f48d9665d9448a59caa69e28369, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2509,10 +2333,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 1373147252482037564, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3788252907024099339, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -2553,21 +2373,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5242303339863367249, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8241263774524237237, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9085019278411756699, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
       propertyPath: m_Name
       value: Room3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085019278411756699, guid: e228f7fdd002ab84689b3416fce0ce8a, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2586,14 +2394,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2
       objectReference: {fileID: 0}
-    - target: {fileID: 401438802197402369, guid: e170c9578e831964aaa68533437f324f, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 867325882089742290, guid: e170c9578e831964aaa68533437f324f, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2209486674542453988, guid: e170c9578e831964aaa68533437f324f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -2633,14 +2433,6 @@ PrefabInstance:
     - target: {fileID: 2209486674542453988, guid: e170c9578e831964aaa68533437f324f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405246175946137259, guid: e170c9578e831964aaa68533437f324f, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3586763499154627725, guid: e170c9578e831964aaa68533437f324f, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2655,10 +2447,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 5122015124043098380, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6475627377160718392, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -2699,21 +2487,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6911661029353526884, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7340544512906445811, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7530643378849648035, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
       propertyPath: m_Name
       value: Hallway1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530643378849648035, guid: d8a9b9a83534b294ea0fec72cff073d1, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2733,14 +2509,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749742117}
     m_Modifications:
-    - target: {fileID: 863852854908962294, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894752289738081804, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6281827329850677907, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1317956
@@ -2781,17 +2549,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6350180480805270259, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7157238892413561324, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
       propertyPath: m_Name
       value: Boss/miniGameRoom2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7157238892413561324, guid: 0a3b9342e8f7e8643b79bf4266eb4c97, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
