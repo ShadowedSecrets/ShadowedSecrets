@@ -110,7 +110,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.61999995, y: 0.61999995, z: 0.61999995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3286989301443202906}
@@ -178,7 +178,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 20b0a487f75279844b589552d6bd2f78, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,7 +199,7 @@ SpriteRenderer:
   m_SortingLayerID: 84801845
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -788083659, guid: 4a64c939dcb21824c85dc21316e9d6c7, type: 3}
+  m_Sprite: {fileID: -608685022, guid: 10ba1c46ea24a96489dec48be1b85c20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
   health: 10
   maxHealth: 10
   player: {fileID: 8754588877363549738}
-  PlayerRs: {fileID: 0}
+  PlayerRs: {fileID: 834664755408865358}
   respawnPoint: {fileID: 0}
   movement: {fileID: 6654824805097735442}
   collsionParticleSystem: {fileID: 7675494607026525289}
