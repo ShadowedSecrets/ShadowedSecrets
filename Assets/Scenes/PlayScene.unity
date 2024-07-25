@@ -1033,8 +1033,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00424999, y: 0.06940001, z: 0}
-    m_Extent: {x: 1.49635, y: 1.5688, z: 0}
+    m_Center: {x: -0.0036500096, y: 0.06850004, z: 0}
+    m_Extent: {x: 1.4962499, y: 1.5682, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1227,8 +1227,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09130001, y: 0.17954999, z: 0}
-    m_Extent: {x: 3.8173, y: 1.08115, z: 0}
+    m_Center: {x: -0.09034991, y: 0.17880002, z: 0}
+    m_Extent: {x: 3.81865, y: 1.0806, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1558,6 +1558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4557075472589154475, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 200.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5579019718018439590, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1641,6 +1645,30 @@ PrefabInstance:
     - target: {fileID: 7302215793017506098, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340009359296751989, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -144.6
       objectReference: {fileID: 0}
     - target: {fileID: 7933128377626182201, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22653,6 +22681,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1177608118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7825976917759088742, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+  m_PrefabInstance: {fileID: 647130647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f70e1351c007b4d826fdf0ccf2aa0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1189991516
 GameObject:
   m_ObjectHideFlags: 0
@@ -23760,8 +23799,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5205499, y: 0.109999985, z: 0}
-    m_Extent: {x: 4.27355, y: 1.1018, z: 0}
+    m_Center: {x: -0.5207001, y: 0.109349996, z: 0}
+    m_Extent: {x: 4.2733, y: 1.10165, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24604,8 +24643,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0041000247, y: 0.06895, z: 0}
-    m_Extent: {x: 1.4951999, y: 1.5676501, z: 0}
+    m_Center: {x: -0.0047499537, y: 0.06880003, z: 0}
+    m_Extent: {x: 1.49565, y: 1.5680001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -30645,6 +30684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5750655340878816134, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: bossHealthUI
+      value: 
+      objectReference: {fileID: 1177608118}
     - target: {fileID: 8865697903802689765, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.06
