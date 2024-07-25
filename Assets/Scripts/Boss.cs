@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
     public float speed = 2f;
     public Transform player;
     public GameObject projectilePrefab;
+    public GameObject ladder;
     public float abilityInterval = 5f;
     public int numberOfProjectiles = 12;
     public float projectileSpeed = 5f;
@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     private int currentHealth;
     private Rigidbody2D rb;
     private bool isActive = false;
-    public BossHealthUI bossHealthUI; 
+    public BossHealthUI bossHealthUI;
 
     void Start()
     {
@@ -33,6 +33,15 @@ public class Boss : MonoBehaviour
         if (bossHealthUI == null)
         {
             Debug.LogError("BossHealthUI is not assigned in the inspector!");
+        }
+
+        if (ladder == null)
+        {
+            Debug.LogError("Ladder is not assigned in the inspector!");
+        }
+        else
+        {
+            ladder.SetActive(false); // Ensure ladder is initially inactive
         }
     }
 
@@ -103,7 +112,6 @@ public class Boss : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-              
         }
     }
 
@@ -112,7 +120,7 @@ public class Boss : MonoBehaviour
         Debug.Log("Boss died");
         Destroy(gameObject);
         bossHealthUI.Hide();
-        SceneManager.LoadScene("FloorTwoScene");
+        ladder.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -138,7 +146,7 @@ public class Boss : MonoBehaviour
             Debug.Log("Boss collided with wall.");
             if (rb != null)
             {
-                rb.velocity = Vector2.zero; 
+                rb.velocity = Vector2.zero;
             }
             else
             {
@@ -155,7 +163,7 @@ public class Boss : MonoBehaviour
     {
         Debug.Log("Boss activated.");
         isActive = true;
-        bossHealthUI.Initialize(this); 
+        bossHealthUI.Initialize(this);
     }
 
     public int GetCurrentHealth()
@@ -163,3 +171,4 @@ public class Boss : MonoBehaviour
         return currentHealth;
     }
 }
+
