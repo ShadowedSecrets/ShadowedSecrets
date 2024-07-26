@@ -14,6 +14,11 @@ public class RiddleManager : MonoBehaviour
             riddlePanel.SetActive(!riddlePanel.activeSelf);
         }
     }
+    public void ShowText(string text)
+    {
+        ShowRiddlePanel();
+        riddlePanel.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = text;
+    }
 
     public void ShowRiddlePanel()
     {

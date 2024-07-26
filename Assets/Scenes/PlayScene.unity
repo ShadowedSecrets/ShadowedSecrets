@@ -1038,8 +1038,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0047500134, y: 0.06984997, z: 0}
-    m_Extent: {x: 1.49595, y: 1.56775, z: 0}
+    m_Center: {x: -0.004000008, y: 0.069299996, z: 0}
+    m_Extent: {x: 1.4962001, y: 1.5682001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1232,8 +1232,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09165001, y: 0.17934999, z: 0}
-    m_Extent: {x: 3.81865, y: 1.08135, z: 0}
+    m_Center: {x: -0.09045005, y: 0.17930004, z: 0}
+    m_Extent: {x: 3.81825, y: 1.0811, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -22563,6 +22563,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6937e3493c5e3e45964bc0b8c968688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1136773256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5064750958259206580, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+  m_PrefabInstance: {fileID: 647130647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75903ac1a806cb46a44387d95b59e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1177608118 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7825976917759088742, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
@@ -23681,8 +23692,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5214, y: 0.11020002, z: 0}
-    m_Extent: {x: 4.2735, y: 1.102, z: 0}
+    m_Center: {x: -0.5207999, y: 0.10869998, z: 0}
+    m_Extent: {x: 4.274, y: 1.1022999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24517,8 +24528,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0040500164, y: 0.07010001, z: 0}
-    m_Extent: {x: 1.49555, y: 1.5681, z: 0}
+    m_Center: {x: -0.0038999915, y: 0.069299996, z: 0}
+    m_Extent: {x: 1.4965999, y: 1.5676, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24695,7 +24706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1893412997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30688,6 +30699,10 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[1].m_Data
       value: 
       objectReference: {fileID: 709688192}
+    - target: {fileID: 5333729281160811300, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5555131703616515030, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_Name
       value: Level 1
@@ -30700,6 +30715,15 @@ PrefabInstance:
       propertyPath: bossHealthUI
       value: 
       objectReference: {fileID: 1177608118}
+    - target: {fileID: 7405572429928398619, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: clueText
+      value: "Controls:\n\nWASD     -  Run\t\nSPACE    -  Dash\nLCLICK   -  Shoot\nQ 
+        - Pestilence"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405572429928398619, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: riddleManager
+      value: 
+      objectReference: {fileID: 1136773256}
     - target: {fileID: 8865697903802689765, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.06
@@ -30738,6 +30762,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8865697903802689765, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909807269393305785, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909807269393305785, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909807269393305785, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

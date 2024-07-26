@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.078431375, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -303,6 +303,7 @@ MonoBehaviour:
   speed: 2
   player: {fileID: 0}
   projectilePrefab: {fileID: 7940806127445786274, guid: acf149843878ebd44bfbb5982e3df74a, type: 3}
+  ladder: {fileID: 0}
   abilityInterval: 2
   numberOfProjectiles: 24
   projectileSpeed: 6
