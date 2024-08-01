@@ -30,7 +30,7 @@ public class PauseWindow : MonoBehaviour
         isPaused = false;
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         pauseWindow.SetActive(true);
         Time.timeScale = 0f;
