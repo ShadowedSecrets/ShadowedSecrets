@@ -28,7 +28,6 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
@@ -54,11 +53,11 @@ public class playerMovement : MonoBehaviour
 
     }
     private void UpdateMovement()
-    {
+    { 
         animator.SetFloat("Horizontal", moveInput.x);
         animator.SetFloat("Vertical", moveInput.y);
         animator.SetFloat("Speed", moveInput.sqrMagnitude);
-
+        
     }
     private void FixedUpdate()
     {
