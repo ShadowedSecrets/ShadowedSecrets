@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4986861165682701021}
   - component: {fileID: 5830674132755820270}
   - component: {fileID: 2427607073869949684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ParticleD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4904,7 +4904,7 @@ GameObject:
   - component: {fileID: 4378943615794383958}
   - component: {fileID: 1826013979467983065}
   - component: {fileID: 4924584535268185534}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9980,7 +9980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6023923132946774816}
   - component: {fileID: 4617767814697673021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

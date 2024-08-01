@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6378708017531555827}
   - component: {fileID: 5113928899475135546}
   - component: {fileID: 3956423218036375757}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ClosetDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4d950a985d68479aeafc41fe03aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySpawners: []
 --- !u!61 &2305851795587937139
 BoxCollider2D:
   m_ObjectHideFlags: 0

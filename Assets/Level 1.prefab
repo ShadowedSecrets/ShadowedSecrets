@@ -3501,7 +3501,7 @@ GameObject:
   - component: {fileID: 7624780097973327134}
   - component: {fileID: 4021067075707416142}
   - component: {fileID: 906022310265687567}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5055,7 +5055,7 @@ GameObject:
   - component: {fileID: 4885224532120595897}
   - component: {fileID: 2080906530977727312}
   - component: {fileID: 6921773551734673986}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7968,7 +7968,7 @@ GameObject:
   - component: {fileID: 861640310755252325}
   - component: {fileID: 6172036699686028078}
   - component: {fileID: 2509483429671907456}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -9493,7 +9493,7 @@ GameObject:
   - component: {fileID: 8431121892890122919}
   - component: {fileID: 6704316473336136389}
   - component: {fileID: 6524076136918286920}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12149,7 +12149,7 @@ GameObject:
   - component: {fileID: 7935586962604335216}
   - component: {fileID: 4476422348724301604}
   - component: {fileID: 9138074828520271229}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22341,7 +22341,7 @@ GameObject:
   - component: {fileID: 1878902694385277476}
   - component: {fileID: 7644861157599509990}
   - component: {fileID: 2235786611622138361}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Colliable5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31406,7 +31406,7 @@ GameObject:
   - component: {fileID: 1537648189240371124}
   - component: {fileID: 6649490648341235992}
   - component: {fileID: 548343349319867693}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -33091,7 +33091,7 @@ GameObject:
   - component: {fileID: 8187779858379922174}
   - component: {fileID: 71472877279371412}
   - component: {fileID: 1176124200763132544}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Collidable8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -35204,9 +35204,9 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741827
@@ -35214,9 +35214,9 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741827
@@ -35269,9 +35269,9 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 8
     m_Data: {fileID: -1746373423, guid: 4c3c03d7ac542ec4a8e78a8176a82417, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -812597543, guid: 4c3c03d7ac542ec4a8e78a8176a82417, type: 3}
@@ -35321,10 +35321,10 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 14
     m_Data: {r: 1, g: 1, b: 1, a: 1}
-  - m_RefCount: 0
-    m_Data: {r: 1.92516e-40, g: 1.92516e-40, b: 1.92516e-40, a: 1.92516e-40}
   - m_RefCount: 2
-    m_Data: {r: 0.9157777, g: 0.57282954, b: 0.6425792, a: 1}
+    m_Data: {r: 0.9127097, g: 0.5940092, b: 0.6957626, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 5.64031e-40, g: 5.64031e-40, b: 5.64031e-40, a: 5.64031e-40}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -37737,6 +37737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riddleManager: {fileID: 0}
+  clueText: 
 --- !u!50 &2241771208933299837
 Rigidbody2D:
   serializedVersion: 4

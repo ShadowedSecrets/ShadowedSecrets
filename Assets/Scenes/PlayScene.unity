@@ -425,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203183068}
   - component: {fileID: 203183069}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SafeDoor
   m_TagString: SafeDoor
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311859944}
   - component: {fileID: 311859945}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: spritesheet_16x16_302
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,8 +1139,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0038999915, y: 0.06984997, z: 0}
-    m_Extent: {x: 1.4951999, y: 1.56775, z: 0}
+    m_Center: {x: -0.003549993, y: 0.0686, z: 0}
+    m_Extent: {x: 1.49565, y: 1.5680001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1333,8 +1333,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0900501, y: 0.17945, z: 0}
-    m_Extent: {x: 3.81855, y: 1.08065, z: 0}
+    m_Center: {x: -0.089999914, y: 0.1791, z: 0}
+    m_Extent: {x: 3.8183, y: 1.0812, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1737,7 +1737,7 @@ GameObject:
   - component: {fileID: 657616374}
   - component: {fileID: 657616376}
   - component: {fileID: 657616375}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7285,7 +7285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839776074}
   - component: {fileID: 839776075}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SafeDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12521,7 +12521,7 @@ GameObject:
   - component: {fileID: 1009463850}
   - component: {fileID: 1009463857}
   - component: {fileID: 1009463856}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SafeDoor
   m_TagString: SafeDoor
   m_Icon: {fileID: 0}
@@ -23793,8 +23793,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5209999, y: 0.109949976, z: 0}
-    m_Extent: {x: 4.2735, y: 1.10185, z: 0}
+    m_Center: {x: -0.51980007, y: 0.10959998, z: 0}
+    m_Extent: {x: 4.2732, y: 1.1027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -23835,7 +23835,7 @@ GameObject:
   - component: {fileID: 1324541684}
   - component: {fileID: 1324541685}
   - component: {fileID: 1324541686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SafeDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24629,8 +24629,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0038999915, y: 0.06949997, z: 0}
-    m_Extent: {x: 1.4956, y: 1.5676, z: 0}
+    m_Center: {x: -0.003799975, y: 0.06945002, z: 0}
+    m_Extent: {x: 1.4962001, y: 1.56785, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -24989,7 +24989,7 @@ GameObject:
   - component: {fileID: 1938481709}
   - component: {fileID: 1938481708}
   - component: {fileID: 1938481710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30792,6 +30792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1218800867761669819, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_TileAssetArray.Array.data[3].m_Data
       value: 
@@ -30800,6 +30804,70 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[1].m_Data
       value: 
       objectReference: {fileID: 709688192}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.b
+      value: 0.49308085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.g
+      value: 0.47121668
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.r
+      value: 0.8524092
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[2].m_Data.a
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[2].m_Data.b
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[2].m_Data.g
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[2].m_Data.r
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_RefCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileColorArray.Array.data[2].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[1].m_RefCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Tiles.Array.data[11].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Tiles.Array.data[12].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Tiles.Array.data[11].second.m_TileSpriteIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402655984412925458, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
+      propertyPath: m_Tiles.Array.data[12].second.m_TileSpriteIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5333729281160811300, guid: c025a3dd863856c4eaec471e0cdc136a, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -30913,6 +30981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorOne
       objectReference: {fileID: 0}
+    - target: {fileID: 4749941857322654739, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6280772999527311857, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.2403
@@ -30952,6 +31024,10 @@ PrefabInstance:
     - target: {fileID: 6280772999527311857, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269362008255897701, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7701297138581853888, guid: 2dff653d94fcddf48a14f339d0445eec, type: 3}
       propertyPath: m_Materials.Array.data[0]
