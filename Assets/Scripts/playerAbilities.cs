@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class playerAbilities : MonoBehaviour
 {
+    
+
     // COOLDOWN IMAGES
     public Image plagueCooldownImage;
     public Image dashCooldownImage;
@@ -20,6 +22,9 @@ public class playerAbilities : MonoBehaviour
     // DASH VARIABLES
     public float dashSpeed = 21f;
     public float dashDuration = 0.2f;
+    public ParticleSystem dashParticleEffect; 
+    private GameObject currentDashEffect;
+
 
     private float plagueTimer;
     private float dashTimer;
@@ -100,9 +105,14 @@ public class playerAbilities : MonoBehaviour
         {
             slowCooldownImage.fillAmount = 0;
         }
-
+        var em = dashParticleEffect.emission;
         if (isDashing)
         {
+            //var em = dashParticleEffect.emission;
+
+            em.rateOverTime = 200.0f;
+            //em.rateOverTime = 0.0f;
+            //dashParticleEffect.main
             dashTime -= Time.deltaTime;
             rb.velocity = dashDirection * dashSpeed;
 
@@ -110,7 +120,18 @@ public class playerAbilities : MonoBehaviour
             {
                 isDashing = false;
                 rb.velocity = Vector2.zero;
+                
             }
+            if (currentDashEffect != null)
+            {
+                Destroy(currentDashEffect);
+            }
+
+        }
+        else 
+        {
+            em.rateOverTime = 0.0f;
+
         }
     }
 
@@ -138,6 +159,13 @@ public class playerAbilities : MonoBehaviour
             {
                 AudioManager.instance.PlayDashSound();
             }
+            //if (dashParticleEffect != null)
+            //{
+            //    //currentDashEffect = Instantiate(dashParticleEffect, transform.position, Quaternion.identity);
+                
+            //    //currentDashEffect.transform.SetParent(transform);
+            //}
+
         }
     }
 
