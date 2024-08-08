@@ -11,12 +11,14 @@ public class BossLevel2 : MonoBehaviour, IBoss
     public int numberOfProjectiles = 12;
     public float projectileSpeed = 5f;
     public int maxHealth = 15;
+    public int numberOfCircularShots = 4; // Number of times to shoot circular projectiles
+    public float circularShotInterval = 1f; // Interval between circular shots
 
     private float abilityTimer;
-    private bool isCircularAbility;
     private int currentHealth;
     private Rigidbody2D rb;
     private bool isActive = false;
+    private bool isShooting = false; // Flag to indicate if the boss is currently shooting
     public BossHealthUI2 bossHealthUI;
 
     void Start()
@@ -47,24 +49,15 @@ public class BossLevel2 : MonoBehaviour, IBoss
 
     void Update()
     {
-        if (!isActive) return;
+        if (!isActive || isShooting) return; // Stop movement if not active or currently shooting
 
         MoveTowardsPlayer();
 
         abilityTimer -= Time.deltaTime;
         if (abilityTimer <= 0)
         {
-            if (isCircularAbility)
-            {
-                StartCoroutine(FireCircularProjectiles());
-            }
-            else
-            {
-                StartCoroutine(FireTargetedProjectiles());
-            }
-
-            isCircularAbility = !isCircularAbility;
-            abilityTimer = abilityInterval;
+            StartCoroutine(FireCircularProjectilesCycle());
+            abilityTimer = abilityInterval; // Reset the ability timer after starting the shooting cycle
         }
     }
 
@@ -77,24 +70,24 @@ public class BossLevel2 : MonoBehaviour, IBoss
         }
     }
 
-    private IEnumerator FireCircularProjectiles()
+    private IEnumerator FireCircularProjectilesCycle()
     {
-        for (int i = 0; i < numberOfProjectiles; i++)
-        {
-            float angle = i * (360f / numberOfProjectiles);
-            Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
-            FireProjectile(direction);
-        }
-        yield return null;
-    }
+        isShooting = true; // Set the shooting flag to true to stop movement
+        rb.velocity = Vector2.zero; // Stop moving
 
-    private IEnumerator FireTargetedProjectiles()
-    {
-        for (int i = 0; i < numberOfProjectiles; i++)
+        for (int i = 0; i < numberOfCircularShots; i++)
         {
-            FireProjectile((player.position - transform.position).normalized);
-            yield return new WaitForSeconds(0.1f);
+            for (int j = 0; j < numberOfProjectiles; j++)
+            {
+                float angle = j * (360f / numberOfProjectiles);
+                Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
+                FireProjectile(direction);
+            }
+            yield return new WaitForSeconds(circularShotInterval);
         }
+
+        isShooting = false; // Reset the shooting flag after finishing the cycle
+        yield return null;
     }
 
     private void FireProjectile(Vector3 direction)
@@ -171,4 +164,3 @@ public class BossLevel2 : MonoBehaviour, IBoss
         return currentHealth;
     }
 }
-
