@@ -41,7 +41,7 @@ public class Echo : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Boss"))
         {
-            Boss boss = collision.GetComponent<Boss>();
+            IBoss boss = collision.GetComponent<IBoss>();
             if (boss != null)
             {
                 boss.TakeDamage(damage);

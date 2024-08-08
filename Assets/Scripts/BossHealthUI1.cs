@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class BossHealthUI : MonoBehaviour
+public class BossHealthUI1 : MonoBehaviour
 {
     public GameObject healthBarObject; 
     public GameObject bossNameTextObject;
 
     private Slider healthBar; 
     private TextMeshProUGUI bossNameText;
-    private Boss boss;
+    private BossLevel1 boss;
     
 
     void Start()
@@ -21,7 +21,7 @@ public class BossHealthUI : MonoBehaviour
         ConfigureTextComponent();
     }
 
-    public void Initialize(Boss boss)
+    public void Initialize(BossLevel1 boss)
     {
         this.boss = boss;
         

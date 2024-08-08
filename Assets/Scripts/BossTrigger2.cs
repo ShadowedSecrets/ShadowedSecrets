@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class RoomTrigger : MonoBehaviour
+public class RoomTrigger2 : MonoBehaviour
 {
-    public BossLevel1 boss;
+    public BossLevel2 boss;
     public string musicSourceName = "MusicSource";
     public AudioClip bossIntroClip;
     public AudioClip bossMusicClip;

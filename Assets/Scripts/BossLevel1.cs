@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public class BossLevel1 : MonoBehaviour, IBoss
 {
     public float speed = 2f;
     public Transform player;
@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     private int currentHealth;
     private Rigidbody2D rb;
     private bool isActive = false;
-    public BossHealthUI bossHealthUI;
+    public BossHealthUI1 bossHealthUI;
 
     void Start()
     {

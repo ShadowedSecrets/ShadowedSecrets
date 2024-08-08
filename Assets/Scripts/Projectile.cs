@@ -56,7 +56,7 @@ public class Projectile : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Boss"))
         {
-            Boss boss = collision.GetComponent<Boss>();
+            IBoss boss = collision.GetComponent<IBoss>();
             if (boss != null)
             {
                 boss.TakeDamage(damage);
@@ -69,15 +69,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    // void OnCollisionEnter2D(Collision2D other)
-    //{
-    //    if (other.gameObject.tag == "Enemy")
-    //    {
-    //        GetComponent<SpriteRenderer>().enabled = false;
-
-    //        Destroy(gameObject,0.5f);
-    //    }
-    //}
+    
 
     private void BounceOff(Collider2D other)
     {
