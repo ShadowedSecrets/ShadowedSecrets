@@ -23,6 +23,7 @@ public class EnemyKillDetector : MonoBehaviour
     public void NotifyEnemyDeath()
     {
         killCount++;
+        Debug.Log("killing enemey");
 
         if (killCount >= requiredKills)
         {
