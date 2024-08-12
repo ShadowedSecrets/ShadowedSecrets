@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 719e0f36396284344b6dff3be4420bca, type: 3}
-  m_Name: NewStoryScene
+  m_Name: Level2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Welcome to Shadowed Secrets.
+  - text: Good Job! on clearing the first leave.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Lets help Artois to find his brother.
+  - text: Explore this level to move closer to the search.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Enjoy the game.
+  - text: Best Of Luck!
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}

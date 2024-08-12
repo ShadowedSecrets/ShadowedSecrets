@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 6687167779685974829}
   - component: {fileID: 2635975895505917180}
   - component: {fileID: 6404099507922131215}
+  - component: {fileID: 6383971214847305883}
   m_Layer: 3
   m_Name: Story
   m_TagString: Untagged
@@ -474,6 +475,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: {fileID: 11400000, guid: cb4067337485462418d702a158b81c96, type: 2}
   bottomBar: {fileID: 2635975895505917180}
+--- !u!95 &6383971214847305883
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376598820030621313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 586ab51fbaced454dbadb0ed0dacd6f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &462214946212814685
 GameObject:
   m_ObjectHideFlags: 0

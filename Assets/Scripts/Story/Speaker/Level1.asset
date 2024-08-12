@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719e0f36396284344b6dff3be4420bca, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: Welcome to Shadowed Secrets.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: Lets help Artois to find his brother.Face the hardships in this Journey.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: Enjoy the game.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}

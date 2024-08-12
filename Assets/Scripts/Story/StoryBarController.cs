@@ -11,11 +11,36 @@ public class StoryBarController : MonoBehaviour
     private int sentenceIndex = -1;
     public StoryScene currentScene;
     private State state = State.Completed;
+    private Animator animator;
+    private bool isHidden;
+
     private enum State
     {
         Playing, Completed
     }
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+    public void Hide()
+    {
+        if (isHidden) 
+        {
+            animator.SetTrigger("Hide");
+            isHidden = true;
+        }
+
+    }
+    public void Show()
+    {
+        animator.SetTrigger("Show");
+        isHidden = false;
+    }
+    public void ClearText()
+    {
+        barText.text = "";
+    }
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;

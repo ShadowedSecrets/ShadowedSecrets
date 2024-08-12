@@ -686,6 +686,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResumeGame
       objectReference: {fileID: 0}
+    - target: {fileID: 2635975895505917180, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: currentScene
+      value: 
+      objectReference: {fileID: 11400000, guid: 3abdad08f5e4af5449c1d1abff755914, type: 2}
     - target: {fileID: 3463866782053532392, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -742,6 +746,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6404099507922131215, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
+      propertyPath: currentScene
+      value: 
+      objectReference: {fileID: 11400000, guid: 3abdad08f5e4af5449c1d1abff755914, type: 2}
     - target: {fileID: 7302215793017506098, guid: b9f602fee2b287c4eb98d61e919dbc3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
