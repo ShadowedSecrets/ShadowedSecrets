@@ -24,7 +24,7 @@ public class playerAbilities : MonoBehaviour
     public float dashDuration = 0.2f;
     //
     public ParticleSystem dashParticleEffect;
-    //public ParticleSystem dashFireParticleEffect;
+    public ParticleSystem dashFireParticleEffect;
     private GameObject currentDashEffect;
     //
 
@@ -108,18 +108,13 @@ public class playerAbilities : MonoBehaviour
         {
             slowCooldownImage.fillAmount = 0;
         }
-        //
-        //var em = dashParticleEffect.emission;
+     
         if (isDashing)
         {
-
-            if (dashParticleEffect/*&&dashFireParticleEffect*/.isPlaying)
-            {
-                dashParticleEffect.Play();
-                //dashFireParticleEffect.Play();
-            }
-
-
+            //Dash Effects
+            dashParticleEffect.Play();
+            dashFireParticleEffect.Play();
+      
 
 
             dashTime -= Time.deltaTime;
@@ -130,23 +125,14 @@ public class playerAbilities : MonoBehaviour
                 isDashing = false;
                 rb.velocity = Vector2.zero;
 
-                
-
             }
-            else
-            {
-                
-
-                if (!dashParticleEffect/*&&dashFireParticleEffect*/.isPlaying)
-                {
-                    dashParticleEffect.Stop();
-                    //dashFireParticleEffect.Stop();
-                }
-            }
-
-
+           
         }
-
+        else
+        {
+            dashParticleEffect.Stop();
+            dashFireParticleEffect.Stop();   
+        }
 
     }
 
@@ -174,9 +160,13 @@ public class playerAbilities : MonoBehaviour
             {
                 AudioManager.instance.PlayDashSound();
             }
-            dashParticleEffect.Play();
-            //dashFireParticleEffect.Play();
+            
 
+            float angle = Mathf.Atan2(dashDirection.y, dashDirection.x) * Mathf.Rad2Deg;
+
+            
+            dashParticleEffect.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            dashFireParticleEffect.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle+135));
 
 
         }
