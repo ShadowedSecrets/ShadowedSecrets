@@ -13,6 +13,7 @@ public class StoryBarController : MonoBehaviour
     private State state = State.Completed;
     private Animator animator;
     private bool isHidden;
+    private float typingSpeed = 0.025f;
 
     private enum State
     {
@@ -62,8 +63,9 @@ public class StoryBarController : MonoBehaviour
         else
         {
             Debug.Log("No more sentences to play.");
-            // Optionally, handle what happens when the scene ends
+            
             state = State.Completed; // Mark the state as completed
+            Hide();
         }
     }
 
@@ -83,7 +85,7 @@ public class StoryBarController : MonoBehaviour
         while (state != State.Completed)
         {
             barText.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(typingSpeed);
             if(++wordIndex == text.Length)
             {
                 state = State.Completed;
