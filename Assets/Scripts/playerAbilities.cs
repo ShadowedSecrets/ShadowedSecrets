@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class playerAbilities : MonoBehaviour
 {
-    
+
 
     // COOLDOWN IMAGES
     public Image plagueCooldownImage;
@@ -22,8 +22,11 @@ public class playerAbilities : MonoBehaviour
     // DASH VARIABLES
     public float dashSpeed = 21f;
     public float dashDuration = 0.2f;
-    public ParticleSystem dashParticleEffect; 
+    //
+    public ParticleSystem dashParticleEffect;
+    //public ParticleSystem dashFireParticleEffect;
     private GameObject currentDashEffect;
+    //
 
 
     private float plagueTimer;
@@ -105,14 +108,20 @@ public class playerAbilities : MonoBehaviour
         {
             slowCooldownImage.fillAmount = 0;
         }
-        var em = dashParticleEffect.emission;
+        //
+        //var em = dashParticleEffect.emission;
         if (isDashing)
         {
-            //var em = dashParticleEffect.emission;
 
-            em.rateOverTime = 200.0f;
-            //em.rateOverTime = 0.0f;
-            //dashParticleEffect.main
+            if (dashParticleEffect/*&&dashFireParticleEffect*/.isPlaying)
+            {
+                dashParticleEffect.Play();
+                //dashFireParticleEffect.Play();
+            }
+
+
+
+
             dashTime -= Time.deltaTime;
             rb.velocity = dashDirection * dashSpeed;
 
@@ -120,19 +129,25 @@ public class playerAbilities : MonoBehaviour
             {
                 isDashing = false;
                 rb.velocity = Vector2.zero;
+
                 
+
             }
-            if (currentDashEffect != null)
+            else
             {
-                Destroy(currentDashEffect);
+                
+
+                if (!dashParticleEffect/*&&dashFireParticleEffect*/.isPlaying)
+                {
+                    dashParticleEffect.Stop();
+                    //dashFireParticleEffect.Stop();
+                }
             }
 
-        }
-        else 
-        {
-            em.rateOverTime = 0.0f;
 
         }
+
+
     }
 
     public void UsePlague()
@@ -159,12 +174,10 @@ public class playerAbilities : MonoBehaviour
             {
                 AudioManager.instance.PlayDashSound();
             }
-            //if (dashParticleEffect != null)
-            //{
-            //    //currentDashEffect = Instantiate(dashParticleEffect, transform.position, Quaternion.identity);
-                
-            //    //currentDashEffect.transform.SetParent(transform);
-            //}
+            dashParticleEffect.Play();
+            //dashFireParticleEffect.Play();
+
+
 
         }
     }
@@ -209,7 +222,7 @@ public class playerAbilities : MonoBehaviour
         if (isEchoUnlocked && echoTimer <= 0f)
         {
             StartCoroutine(FireCircularProjectiles());
-            echoTimer = echoCooldown;  
+            echoTimer = echoCooldown;
             echoCooldownImage.fillAmount = 1;
         }
         else if (!isEchoUnlocked)
@@ -228,7 +241,7 @@ public class playerAbilities : MonoBehaviour
         {
             float angle = i * (360f / numberOfProjectiles);
             Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
-            
+
             FireProjectile(direction);
             yield return new WaitForSeconds(delay);
         }
@@ -267,5 +280,3 @@ public class playerAbilities : MonoBehaviour
         isEchoUnlocked = true;
     }
 }
-
-
