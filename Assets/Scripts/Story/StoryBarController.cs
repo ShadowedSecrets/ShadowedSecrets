@@ -21,6 +21,7 @@ public class StoryBarController : MonoBehaviour
 
     private void Start()
     {
+
         animator = GetComponent<Animator>();
     }
     public void Hide()
@@ -47,14 +48,25 @@ public class StoryBarController : MonoBehaviour
         sentenceIndex = -1;
         PlayNextSentence();
     }
-   
+
     public void PlayNextSentence()
     {
-        StartCoroutine(TypeText(currentScene.Sentences[++sentenceIndex].text));
-        personName.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
-        personName.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
-    }  
-    
+        // Check if the current sentence index is within bounds
+        if (sentenceIndex + 1 < currentScene.Sentences.Count)
+        {
+            sentenceIndex++; // Increment the index before accessing
+            StartCoroutine(TypeText(currentScene.Sentences[sentenceIndex].text));
+            personName.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
+            personName.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+        }
+        else
+        {
+            Debug.Log("No more sentences to play.");
+            // Optionally, handle what happens when the scene ends
+            state = State.Completed; // Mark the state as completed
+        }
+    }
+
     public bool isCompleted()
     {
         return state == State.Completed;    
