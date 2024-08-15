@@ -1,24 +1,34 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BossLevel3 : MonoBehaviour, IBoss
 {
+    public enum BossPhase { SPAWN, CHASE }
+    private BossPhase currentPhase;
+
     public float speed = 2f;
     public Transform player;
     public GameObject projectilePrefab;
+    public GameObject[] enemyPrefabs; // Array to store different enemy types
     public GameObject ladder;
     public float abilityInterval = 5f;
     public int numberOfProjectiles = 12;
     public float projectileSpeed = 5f;
     public int maxHealth = 15;
-    public int numberOfCircularShots = 4; // Number of times to shoot circular projectiles
-    public float circularShotInterval = 1f; // Interval between circular shots
+    public int numberOfCircularShots = 4;
+    public float circularShotInterval = 1f;
+    public int numberOfEnemiesToSpawn = 20;
+    public int coneProjectiles = 5;
+    public float coneAngle = 10f;
+    public float spawnPhaseDuration = 15f; // Time the boss remains in SPAWN phase
+    public float chasePhaseDuration = 10f; // Time the boss remains in CHASE phase
 
     private float abilityTimer;
     private int currentHealth;
     private Rigidbody2D rb;
     private bool isActive = false;
-    private bool isShooting = false; // Flag to indicate if the boss is currently shooting
+    private bool isShooting = false;
     public BossHealthUI3 bossHealthUI;
 
     void Start()
@@ -29,7 +39,6 @@ public class BossLevel3 : MonoBehaviour, IBoss
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
         abilityTimer = abilityInterval;
-
         currentHealth = maxHealth;
 
         if (bossHealthUI == null)
@@ -45,19 +54,43 @@ public class BossLevel3 : MonoBehaviour, IBoss
         {
             ladder.SetActive(false); // Ensure ladder is initially inactive
         }
+
+        currentPhase = BossPhase.SPAWN;
+        StartCoroutine(HandleBossPhases());
     }
 
     void Update()
     {
-        if (!isActive || isShooting) return; // Stop movement if not active or currently shooting
+        if (!isActive || isShooting) return;
 
-        MoveTowardsPlayer();
-
-        abilityTimer -= Time.deltaTime;
-        if (abilityTimer <= 0)
+        if (currentPhase == BossPhase.CHASE)
         {
-            StartCoroutine(FireCircularProjectilesCycle());
-            abilityTimer = abilityInterval; // Reset the ability timer after starting the shooting cycle
+            MoveTowardsPlayer();
+
+            abilityTimer -= Time.deltaTime;
+            if (abilityTimer <= 0)
+            {
+                FireConeProjectiles();
+                abilityTimer = abilityInterval;
+            }
+        }
+    }
+
+    private IEnumerator HandleBossPhases()
+    {
+        while (true)
+        {
+            if (currentPhase == BossPhase.SPAWN)
+            {
+                yield return StartCoroutine(SpawnEnemies());
+                yield return new WaitForSeconds(spawnPhaseDuration);
+                currentPhase = BossPhase.CHASE;
+            }
+            else if (currentPhase == BossPhase.CHASE)
+            {
+                yield return new WaitForSeconds(chasePhaseDuration);
+                currentPhase = BossPhase.SPAWN;
+            }
         }
     }
 
@@ -70,24 +103,43 @@ public class BossLevel3 : MonoBehaviour, IBoss
         }
     }
 
-    private IEnumerator FireCircularProjectilesCycle()
+    private IEnumerator SpawnEnemies()
     {
-        isShooting = true; // Set the shooting flag to true to stop movement
-        rb.velocity = Vector2.zero; // Stop moving
+        isShooting = true;
+        rb.velocity = Vector2.zero;
 
-        for (int i = 0; i < numberOfCircularShots; i++)
+        for (int i = 0; i < numberOfEnemiesToSpawn; i++)
         {
-            for (int j = 0; j < numberOfProjectiles; j++)
-            {
-                float angle = j * (360f / numberOfProjectiles);
-                Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
-                FireProjectile(direction);
-            }
-            yield return new WaitForSeconds(circularShotInterval);
+            float angle = i * (360f / numberOfEnemiesToSpawn);
+            Vector3 spawnPosition = transform.position + (Quaternion.Euler(0, 0, angle) * Vector3.right * 3f);
+            GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         }
 
-        isShooting = false; // Reset the shooting flag after finishing the cycle
-        yield return null;
+        yield return null; // End the coroutine and allow the phase transition to occur after the set duration
+        isShooting = false;
+    }
+
+    private void FireConeProjectiles()
+    {
+        isShooting = true;
+        rb.velocity = Vector2.zero;
+
+        
+        Vector3 directionToPlayer = (player.position - transform.position).normalized;
+        float baseAngle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
+
+        
+        float startAngle = baseAngle - (coneAngle * (coneProjectiles - 1)) / 2;
+
+        for (int i = 0; i < coneProjectiles; i++)
+        {
+            float angle = startAngle + i * coneAngle;
+            Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.right;
+            FireProjectile(direction);
+        }
+
+        isShooting = false;
     }
 
     private void FireProjectile(Vector3 direction)
@@ -99,6 +151,8 @@ public class BossLevel3 : MonoBehaviour, IBoss
 
     public void TakeDamage(int damageAmount)
     {
+        if (currentPhase == BossPhase.SPAWN) return;
+
         currentHealth -= damageAmount;
         Debug.Log("Boss took damage, current health: " + currentHealth);
 
