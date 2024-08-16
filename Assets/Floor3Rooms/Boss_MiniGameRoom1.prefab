@@ -9809,6 +9809,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6982107847058028365, guid: d37f87afc3b119e4496318923f79b878, type: 3}
+      propertyPath: keyPrefab
+      value: 
+      objectReference: {fileID: 1236226325196643073, guid: bf51c75e0ffb07d49930c0fec220bbe2, type: 3}
+    - target: {fileID: 6982107847058028365, guid: d37f87afc3b119e4496318923f79b878, type: 3}
       propertyPath: detectionRadius
       value: 7
       objectReference: {fileID: 0}
