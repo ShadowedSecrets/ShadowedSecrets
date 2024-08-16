@@ -7,7 +7,7 @@ public class Crystals : MonoBehaviour
     public GameObject redCrystal;
     public GameObject yellowCrystal;
     public GameObject reward;
-    public GameObject reward2;
+    
     [SerializeField] private List<EnemySpawner> enemySpawners;
 
     [SerializeField] public Transform rewardDrop;
@@ -51,7 +51,6 @@ public class Crystals : MonoBehaviour
     private void RewardPlayer()
     {
         Instantiate(reward, rewardDrop.position, Quaternion.identity);
-        Instantiate(reward2, rewardDrop.position, Quaternion.identity);
 
         destructionIndex = 0;
     }

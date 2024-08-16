@@ -26,6 +26,27 @@ public class DoorTwo : MonoBehaviour
                 }
             }
         }
+
+        if (other.gameObject.CompareTag("BossKey"))
+        {
+            Destroy(other.gameObject);
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlayDoorOpenSound();
+            }
+            GetComponent<ParticleSystem>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(other.gameObject);
+            Invoke(nameof(DestroyObj), 0.1f);
+            foreach (EnemySpawner spawner in enemySpawners)
+            {
+                if (spawner != null)
+                {
+                    spawner.StopSpawn();
+                }
+            }
+
+        }
     }
     private void DestroyObj()
     {
