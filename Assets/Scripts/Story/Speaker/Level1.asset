@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Welcome to Shadowed Secrets.
+  - text: Artois wakes up in the ruins of the lab, with broken glass, scattered papers
+      on the ground. The castle is eerily silent, with the occasional rumble shaking
+      the ground.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Lets help Artois to find his brother.Face the hardships in this Journey.
+  - text: Illian is missing and the only thing left behind was the book his brother
+      was working on that night.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Enjoy the game.
+  - text: Illian had created a grimoire capable of great power, and with Artois help,
+      he was one step closer to the last spell.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: Artois picks up the book and ventures through the castle looking for his
+      brother. Good Luck!
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}

@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Good Job! on clearing the first leave.
+  - text: The castle becomes more dangerous as Artois ventures deeper.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Explore this level to move closer to the search.
+  - text: The once-familiar halls are now twisted and distorted by the grimoire's
+      magic, with rooms shifting and corridors leading to unexpected places.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: Best Of Luck!
+  - text: Artois must find the two jewels to break the seal and advance. Each jewel
+      is guarded by a more powerful magical entity or puzzle.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: "The seal will break, revealing a passage to a forgotten part of the castle\u2014a
+      place where Illian may be hiding or trapped."
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}

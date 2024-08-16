@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: Level3
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Wow! that's great.
+  - text: Artois enters the heart of the castle, where the magic is strongest.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: You are now one step closer to finding your brother
+  - text: The environment is surreal, with gravity-defying architecture, floating
+      islands, and powerful magical anomalies.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
-  - text: 'Be careful! '
+  - text: Artois must find Illian and either save him or confront him, depending
+      on what has become of him.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: The grimoire's power is overwhelming, and Artois must use all his skills
+      to survive.
+    speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
+  - text: The grimoire's power is overwhelming, and Artois must use all his skills
+      to survive.
     speaker: {fileID: 11400000, guid: 733acc94ff87c6941aab19cc51dacc95, type: 2}
